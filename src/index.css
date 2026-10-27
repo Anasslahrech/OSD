@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/*
+  Charte graphique OSD
+  Orange  #e3561a  (boutons, accents)
+  Bleu nuit #24375f (fonds sombres, textes)
+  Bleu clair #9fbacb (détails, séparateurs)
+  Les noms charcoal / bronze / bone / sand sont conservés dans les composants :
+  seules les valeurs ci-dessous changent.
+*/
+@theme {
+  --color-charcoal: #24375f;
+  --color-ink: #1b2a4a;
+  --color-bone: #f6f8fb;
+  --color-sand: #dfe8ef;
+  --color-sky: #9fbacb;
+  --color-bronze: #e3561a;
+  --color-bronze-light: #f58a5a;
+  --color-accent: #bd430f; /* orange foncé pour le petit texte sur fond clair (contraste AA) */
+  --font-display: "Barlow Condensed", "Arial Narrow", system-ui, sans-serif;
+  --font-sans: "Barlow", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bone);
+  color: var(--color-charcoal);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-weight: 600;
+  letter-spacing: 0.005em;
+}
+
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+.eyebrow {
+  font-size: 0.74rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+::selection {
+  background: var(--color-bronze);
+  color: white;
+}
