@@ -1,0 +1,521 @@
+{
+  "nav": {
+    "services": "Services",
+    "projects": "Réalisations",
+    "about": "À propos",
+    "blog": "Blog",
+    "contact": "Contact",
+    "quote": "Demander un devis",
+    "brandLabel": "Overall Style Designer, accueil",
+    "mainNav": "Navigation principale",
+    "mobileNav": "Navigation mobile",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+  "hero": {
+    "country": "Maroc",
+    "line1": "Nous construisons",
+    "line2": "des espaces",
+    "line3": "qui durent.",
+    "description": "Overall Style Designer construit, rénove et aménage appartements, villas, cabinets professionnels et autres locaux. Une seule équipe, un devis détaillé, un seul interlocuteur.",
+    "discover": "Découvrir nos projets",
+    "quote": "Demander un devis"
+  },
+  "cities": {
+    "Kénitra": "Kénitra",
+    "Rabat": "Rabat",
+    "Salé": "Salé"
+  },
+  "seo": {
+    "defaultTitle": "{{name}} | Construction et rénovation à Kénitra, Rabat et Salé",
+    "homeDescription": "Overall Style Designer construit, rénove et aménage appartements, villas, cabinets professionnels et locaux à Kénitra, Rabat et Salé. Projets avant/après et devis gratuit."
+  },
+  "categories": {
+    "Tous": "Tous",
+    "Appartements": "Appartements",
+    "Villas": "Villas",
+    "Maisons": "Maisons",
+    "Cabinets": "Cabinets",
+    "Rénovation intérieure": "Rénovation intérieure",
+    "Rénovation": "Rénovation",
+    "Construction": "Construction"
+  },
+  "servicesSection": {
+    "eyebrow": "Nos services",
+    "heading": "Tout ce qu'il faut pour mener votre projet de bout en bout.",
+    "more": "En savoir plus"
+  },
+  "servicePage": {
+    "eyebrow": "Nos services",
+    "back": "Tous les services",
+    "how": "Comment nous travaillons",
+    "benefits": "Les avantages",
+    "quote": "Demander un devis",
+    "projects": "Nos réalisations",
+    "seeBA": "Voir avant / après →"
+  },
+  "projectsSection": {
+    "eyebrow": "Nos réalisations",
+    "heading": "Avant, après : les chantiers parlent d'eux-mêmes.",
+    "filter": "Filtrer les projets",
+    "empty": "Aucun projet dans cette catégorie pour le moment.",
+    "viewBA": "Voir avant / après",
+    "photoToAdd": "Photo à ajouter"
+  },
+  "projectPage": {
+    "back": "Toutes les réalisations",
+    "slide": "Faites glisser le curseur pour comparer l'avant et l'après.",
+    "video": "Votre navigateur ne lit pas cette vidéo.",
+    "service": "Prestation",
+    "city": "Ville",
+    "year": "Année",
+    "similar": "Un projet similaire ? Demander un devis",
+    "others": "Autres réalisations",
+    "seoDesc": "{{service}} à {{city}} : {{description}}"
+  },
+  "beforeAfter": {
+    "before": "Avant",
+    "after": "Après",
+    "photoMissing": "Photo {{label}} à ajouter",
+    "alt": "Photo {{label}} travaux",
+    "compare": "Comparer avant et après"
+  },
+  "about": {
+    "eyebrow": "À propos",
+    "heading": "Une jeune entreprise, une équipe, une exigence.",
+    "p1": "{{name}} est une entreprise récente de construction et de rénovation. Nous intervenons à {{zone}} pour construire, rénover et aménager appartements, villas, cabinets professionnels et autres locaux.",
+    "p2": "Vous savez qui répond au téléphone, qui supervise le chantier et qui vous remet les clés.",
+    "targets": [
+      "Particuliers : appartements, villas, maisons",
+      "Professionnels : médecins, dentistes, avocats, cabinets",
+      "Partenaires : architectes, décorateurs, agences immobilières, promoteurs"
+    ],
+    "stats": [
+      {
+        "label": "Villes d'intervention",
+        "suffix": ""
+      },
+      {
+        "label": "Pour recevoir votre devis",
+        "suffix": " h"
+      },
+      {
+        "label": "Interlocuteur unique",
+        "suffix": ""
+      }
+    ],
+    "values": [
+      {
+        "title": "Qualité",
+        "text": "Des matériaux sélectionnés et des artisans qualifiés, contrôle à chaque étape."
+      },
+      {
+        "title": "Délais respectés",
+        "text": "Un planning clair signé au départ, un suivi régulier du chantier."
+      },
+      {
+        "title": "Transparence",
+        "text": "Devis détaillé poste par poste, aucun coût caché."
+      }
+    ],
+    "methodEyebrow": "Notre méthode",
+    "methodHeading": "Quatre étapes, du premier échange à la remise des clés.",
+    "method": [
+      {
+        "title": "Écoute et visite",
+        "text": "Nous nous déplaçons, écoutons votre projet et relevons les contraintes du lieu."
+      },
+      {
+        "title": "Devis détaillé",
+        "text": "Vous recevez un devis clair, poste par poste, sous 48 h."
+      },
+      {
+        "title": "Réalisation suivie",
+        "text": "Un chef de chantier dédié, un planning partagé et des photos d'avancement."
+      },
+      {
+        "title": "Livraison et suivi",
+        "text": "Réception avec vous, levée des réserves et assistance après livraison."
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Avis clients",
+    "heading": "Ils nous ont fait confiance."
+  },
+  "form": {
+    "eyebrow": "Contact et devis",
+    "heading": "Parlons de votre projet.",
+    "intro": "Décrivez vos travaux : vous recevez une réponse et un devis détaillé gratuit sous 48 h.",
+    "address": "Kénitra, Maroc",
+    "hours": "Lun – Sam · 8h30 – 18h30",
+    "mapTitle": "Carte Google Maps : {{query}}",
+    "sentTitle": "Demande envoyée",
+    "sentText": "Merci ! Nous vous recontactons très vite pour discuter de votre projet.",
+    "sentAgain": "Envoyer une autre demande",
+    "name": "Nom et prénom *",
+    "phone": "Téléphone *",
+    "email": "E-mail *",
+    "city": "Ville du chantier *",
+    "cityPlaceholder": "Kénitra, Rabat, Salé…",
+    "type": "Type de projet *",
+    "select": "Sélectionner…",
+    "types": [
+      "Construction de villa",
+      "Construction de maison",
+      "Rénovation d'appartement",
+      "Rénovation de villa ou maison",
+      "Aménagement de cabinet professionnel",
+      "Aménagement d'autres locaux",
+      "Finitions (peinture, carrelage…)",
+      "Autre"
+    ],
+    "budget": "Budget estimé (facultatif)",
+    "budgetNone": "Non précisé",
+    "budgets": [
+      "Moins de 200 000 DH",
+      "200 000 – 500 000 DH",
+      "500 000 – 1 000 000 DH",
+      "Plus de 1 000 000 DH"
+    ],
+    "message": "Description des travaux *",
+    "attachment": "Pièce jointe (facultatif) : plan, photo ou document",
+    "attachmentChoose": "Choisir un fichier (JPG, PNG, PDF, 2 Mo max)",
+    "consentBefore": "J'accepte que mes informations soient utilisées pour répondre à ma demande, conformément à la",
+    "consentLink": "politique de confidentialité",
+    "consentAfter": "(loi 09-08). *",
+    "sendError": "L'envoi a échoué. Réessayez ou écrivez-nous à {{email}}.",
+    "submit": "Envoyer ma demande de devis",
+    "errors": {
+      "file": "Fichier JPG, PNG, WebP ou PDF de 2 Mo maximum.",
+      "name": "Indiquez votre nom.",
+      "phone": "Numéro marocain invalide.",
+      "email": "E-mail invalide.",
+      "type": "Choisissez un type de projet.",
+      "city": "Indiquez la ville du chantier.",
+      "message": "Décrivez brièvement vos travaux.",
+      "consent": "Votre accord est nécessaire pour traiter votre demande."
+    }
+  },
+  "cookie": {
+    "label": "Consentement aux cookies",
+    "text": "Nous utilisons des cookies de mesure d'audience pour améliorer le site. Vous pouvez les accepter ou les refuser à tout moment.",
+    "policy": "Politique de confidentialité",
+    "accept": "Accepter",
+    "refuse": "Refuser"
+  },
+  "floating": {
+    "call": "Appeler",
+    "whatsapp": "Écrire sur WhatsApp",
+    "message": "Bonjour {{name}}, je souhaite un devis pour un projet."
+  },
+  "footer": {
+    "text": "Construction, rénovation et aménagement d'appartements, villas, cabinets et autres locaux à {{zone}}.",
+    "nav": "Pied de page",
+    "legal": "Mentions légales",
+    "privacy": "Confidentialité",
+    "cookies": "Gérer les cookies",
+    "follow": "Suivez-nous",
+    "rights": "Tous droits réservés."
+  },
+  "blog": {
+    "seoTitle": "Blog et conseils",
+    "seoDesc": "Conseils pour réussir vos travaux de construction, de rénovation et d'aménagement de cabinets au Maroc.",
+    "eyebrow": "Blog",
+    "title": "Conseils en rénovation et construction.",
+    "categories": "Catégories d'articles",
+    "all": "Tous les articles",
+    "ctaTitle": "Un projet en tête ?",
+    "ctaText": "Décrivez vos travaux, nous vous répondons avec un devis détaillé gratuit.",
+    "ctaButton": "Demander un devis"
+  },
+  "notFound": {
+    "seoTitle": "Page introuvable",
+    "seoDesc": "Cette page n'existe pas.",
+    "eyebrow": "Erreur 404",
+    "title": "Page introuvable.",
+    "text": "La page que vous cherchez n'existe pas ou a été déplacée.",
+    "home": "Retour à l'accueil"
+  },
+  "legal": {
+    "seoTitle": "Mentions légales",
+    "seoDesc": "Mentions légales du site de {{name}}.",
+    "eyebrow": "Informations légales",
+    "title": "Mentions légales",
+    "todo": "[à compléter]",
+    "editor": "Éditeur du site",
+    "companyName": "Raison sociale",
+    "legalForm": "Forme juridique",
+    "capital": "Capital",
+    "ice": "ICE",
+    "rc": "Registre du commerce",
+    "if": "Identifiant fiscal",
+    "address": "Siège social",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "director": "Directeur de la publication",
+    "hostingTitle": "Hébergement",
+    "ipTitle": "Propriété intellectuelle",
+    "ipText": "Les textes, photos, vidéos, logos et éléments graphiques de ce site appartiennent à {{name}} ou sont utilisés avec l'accord de leurs auteurs. Toute reproduction sans autorisation écrite est interdite.",
+    "liabilityTitle": "Responsabilité",
+    "liabilityText": "{{name}} s'efforce de fournir des informations exactes et à jour, sans pouvoir garantir l'absence d'erreur. Les photos de réalisations sont présentées à titre d'illustration. Les devis font foi pour toute prestation."
+  },
+  "privacy": {
+    "seoTitle": "Politique de confidentialité",
+    "seoDesc": "Comment {{name}} protège vos données personnelles (loi 09-08).",
+    "eyebrow": "Données personnelles",
+    "title": "Politique de confidentialité",
+    "controllerTitle": "Responsable du traitement",
+    "controllerText": "{{name}}, joignable à {{email}}. Cette politique est établie conformément à la loi marocaine n° 09-08 relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel.",
+    "dataTitle": "Données collectées",
+    "dataText": "Via le formulaire de devis : nom, téléphone, e-mail, ville, type de projet, budget, description des travaux et, si vous le souhaitez, une pièce jointe. Ces informations sont fournies volontairement par vos soins.",
+    "purposeTitle": "Finalités",
+    "purposeText": "Vos données servent uniquement à répondre à votre demande, établir un devis et vous recontacter à ce sujet. Elles ne sont ni vendues ni cédées à des tiers à des fins commerciales.",
+    "retentionTitle": "Durée de conservation",
+    "retentionText": "Les demandes de devis sont conservées le temps nécessaire au traitement de votre projet, puis supprimées au plus tard 3 ans après le dernier échange.",
+    "cookiesTitle": "Cookies et mesure d'audience",
+    "cookiesText": "Avec votre accord, nous pouvons utiliser des outils de mesure d'audience (Google Analytics, Meta Pixel) pour comprendre l'usage du site. Vous pouvez accepter ou refuser, et modifier votre choix à tout moment.",
+    "cookiesButton": "Modifier mon choix",
+    "rightsTitle": "Vos droits",
+    "rightsText": "Conformément à la loi 09-08, vous disposez d'un droit d'accès, de rectification et d'opposition sur vos données. Pour l'exercer, écrivez-nous à {{email}}. Vous pouvez également vous adresser à la Commission Nationale de contrôle de la protection des Données à caractère Personnel (CNDP)."
+  },
+  "data": {
+    "services": {
+      "construction": {
+        "title": "Construction de villas et maisons",
+        "text": "De la dalle à la livraison : gros œuvre, second œuvre et finitions, avec un seul interlocuteur.",
+        "intro": "Vous avez un terrain et un projet de villa ou de maison ? Nous prenons en charge la construction complète, du gros œuvre aux finitions, avec un planning et un devis détaillés dès le départ.",
+        "steps": [
+          {
+            "title": "Étude du projet",
+            "text": "Visite du terrain, écoute de vos besoins, validation des plans avec votre architecte."
+          },
+          {
+            "title": "Devis détaillé",
+            "text": "Chiffrage poste par poste : terrassement, gros œuvre, second œuvre, finitions."
+          },
+          {
+            "title": "Chantier suivi",
+            "text": "Planning signé, points réguliers et photos d'avancement."
+          },
+          {
+            "title": "Livraison",
+            "text": "Contrôle final, levée des réserves et remise des clés."
+          }
+        ],
+        "benefits": [
+          "Un seul interlocuteur du début à la fin",
+          "Matériaux sélectionnés et artisans qualifiés",
+          "Planning et budget clairs dès la signature"
+        ]
+      },
+      "renovation": {
+        "title": "Rénovation complète ou partielle",
+        "text": "Transformation d'appartements, maisons et villas : structure, distribution, façade et remise aux normes.",
+        "intro": "Appartement ancien, maison à moderniser, villa à agrandir : nous rénovons en totalité ou pièce par pièce, en limitant les nuisances et en respectant vos délais.",
+        "steps": [
+          {
+            "title": "Diagnostic",
+            "text": "État des lieux, repérage des contraintes techniques et des travaux prioritaires."
+          },
+          {
+            "title": "Proposition et devis",
+            "text": "Solutions adaptées à votre budget, avec options chiffrées séparément."
+          },
+          {
+            "title": "Travaux",
+            "text": "Démolition, reprise de structure, plomberie, électricité, cloisons et revêtements."
+          },
+          {
+            "title": "Finitions et réception",
+            "text": "Peinture, pose, nettoyage de fin de chantier et réception avec vous."
+          }
+        ],
+        "benefits": [
+          "Rénovation totale ou par étapes",
+          "Chantier propre et protégé",
+          "Remise aux normes plomberie et électricité"
+        ]
+      },
+      "amenagement-cabinets": {
+        "title": "Aménagement de cabinets",
+        "text": "Cabinets médicaux, dentaires, juridiques et bureaux : circulation, acoustique, éclairage et finitions soignées.",
+        "intro": "Médecins, dentistes, avocats, architectes : votre local est votre outil de travail. Nous l'aménageons pour qu'il soit fonctionnel, accueillant et livré à la date prévue pour ne pas retarder votre ouverture.",
+        "steps": [
+          {
+            "title": "Cahier des besoins",
+            "text": "Salle d'attente, cabinet, stérilisation, archives : chaque usage est défini avec vous."
+          },
+          {
+            "title": "Plan et devis",
+            "text": "Implantation des pièces, réseaux (eau, électricité, données) et chiffrage détaillé."
+          },
+          {
+            "title": "Réalisation",
+            "text": "Cloisons, faux plafonds, électricité, plomberie, menuiserie sur mesure, revêtements."
+          },
+          {
+            "title": "Livraison clés en main",
+            "text": "Local prêt à équiper et à recevoir vos patients ou clients."
+          }
+        ],
+        "benefits": [
+          "Respect strict du calendrier d'ouverture",
+          "Confort acoustique et éclairage adaptés",
+          "Image professionnelle et soignée"
+        ]
+      },
+      "finitions": {
+        "title": "Peinture, carrelage et revêtements",
+        "text": "Zellige, marbre, carrelage grand format, enduits décoratifs et peinture haut de gamme.",
+        "intro": "Les finitions font la différence. Nous posons carrelage, marbre, zellige et revêtements décoratifs, et réalisons des peintures nettes, durables et adaptées à chaque pièce.",
+        "steps": [
+          {
+            "title": "Choix des matériaux",
+            "text": "Conseils sur les teintes, formats et matières selon l'usage de chaque pièce."
+          },
+          {
+            "title": "Préparation des supports",
+            "text": "Ragréage, enduits et traitements pour une base parfaitement plane."
+          },
+          {
+            "title": "Pose et application",
+            "text": "Pose soignée, joints réguliers, peinture en plusieurs couches."
+          },
+          {
+            "title": "Contrôle final",
+            "text": "Vérification pièce par pièce avant remise des clés."
+          }
+        ],
+        "benefits": [
+          "Pose soignée et alignements précis",
+          "Large choix de revêtements",
+          "Finitions durables"
+        ]
+      },
+      "plomberie-electricite": {
+        "title": "Plomberie et électricité",
+        "text": "Installations neuves ou reprises complètes, conformes et testées avant livraison.",
+        "intro": "Réseaux d'eau, évacuations, tableaux électriques, éclairage : nous réalisons des installations neuves ou reprenons l'existant pour plus de sécurité et de confort.",
+        "steps": [
+          {
+            "title": "Relevé et schéma",
+            "text": "Repérage des points d'eau et d'électricité, dimensionnement des réseaux."
+          },
+          {
+            "title": "Installation",
+            "text": "Pose des canalisations, gaines, tableau et appareillage."
+          },
+          {
+            "title": "Tests",
+            "text": "Essais en pression, contrôle des protections et du fonctionnement."
+          },
+          {
+            "title": "Remise des plans",
+            "text": "Repérage des circuits pour faciliter les interventions futures."
+          }
+        ],
+        "benefits": [
+          "Installations conformes et sécurisées",
+          "Essais avant livraison",
+          "Intégration discrète dans la décoration"
+        ]
+      },
+      "amenagement-interieur-exterieur": {
+        "title": "Aménagement intérieur et extérieur",
+        "text": "Cuisines, dressings, menuiserie sur mesure, terrasses, piscines et jardins.",
+        "intro": "Cuisine ouverte, dressing sur mesure, terrasse, piscine ou jardin : nous aménageons vos espaces de vie pour qu'ils soient beaux, pratiques et faciles à entretenir.",
+        "steps": [
+          {
+            "title": "Conception",
+            "text": "Plans, ambiances et choix des matériaux avec vous."
+          },
+          {
+            "title": "Fabrication et préparation",
+            "text": "Menuiserie sur mesure et préparation des supports intérieurs et extérieurs."
+          },
+          {
+            "title": "Installation",
+            "text": "Pose, raccordements et aménagements extérieurs."
+          },
+          {
+            "title": "Réception",
+            "text": "Contrôle des finitions et conseils d'entretien."
+          }
+        ],
+        "benefits": [
+          "Menuiserie sur mesure",
+          "Cohérence entre intérieur et extérieur",
+          "Conseils d'entretien inclus"
+        ]
+      }
+    },
+    "projects": {
+      "villa-mehdia": {
+        "title": "Villa Mehdia",
+        "service": "Construction clé en main",
+        "description": "Construction complète d'une villa : gros œuvre, second œuvre et finitions, livrée avec un seul interlocuteur."
+      },
+      "maison-souissi": {
+        "title": "Maison Souissi",
+        "service": "Rénovation complète",
+        "description": "Rénovation complète : distribution des pièces, électricité, plomberie et revêtements."
+      },
+      "cabinet-agdal": {
+        "title": "Cabinet Dentaire Agdal",
+        "service": "Aménagement de cabinet",
+        "description": "Aménagement d'un cabinet dentaire : salle d'attente, salles de soins, réseaux et finitions."
+      },
+      "appartement-sale": {
+        "title": "Appartement Hay Salam",
+        "service": "Rénovation complète",
+        "description": "Rénovation d'un appartement : ouverture de la cuisine, nouveau carrelage, salle de bain et peinture."
+      },
+      "salon-cuisine-kenitra": {
+        "title": "Salon et cuisine Kénitra",
+        "service": "Aménagement intérieur",
+        "description": "Réaménagement d'un salon et d'une cuisine ouverte avec menuiserie sur mesure."
+      },
+      "villa-harhoura": {
+        "title": "Villa Harhoura",
+        "service": "Rénovation et extension",
+        "description": "Rénovation d'une villa existante et extension de l'étage avec terrasse."
+      }
+    },
+    "posts": {
+      "renover-un-appartement-par-ou-commencer": {
+        "title": "Rénover un appartement : par où commencer ?",
+        "excerpt": "Les premières décisions à prendre avant de lancer des travaux, pour garder le budget et le planning sous contrôle.",
+        "paragraphs": [
+          "Avant de choisir la couleur des murs, commencez par définir l'objectif de votre rénovation : gagner de la place, moderniser, ou remettre l'appartement aux normes. Cet objectif guide tous les choix qui suivent.",
+          "Faites ensuite un état des lieux : humidité, électricité, plomberie, sols. Ce sont les travaux invisibles qui pèsent le plus sur le budget, mieux vaut les connaître avant de signer un devis.",
+          "Demandez un devis détaillé poste par poste, avec un planning. Cela permet de comparer, de prioriser et, si besoin, de répartir les travaux en plusieurs étapes.",
+          "Enfin, prévoyez une marge pour les imprévus. Dans une rénovation, il est courant de découvrir des problèmes une fois les murs ouverts."
+        ]
+      },
+      "amenager-un-cabinet-medical-points-cles": {
+        "title": "Aménager un cabinet médical : les points clés",
+        "excerpt": "Circulation, acoustique, réseaux : ce qu'il faut prévoir pour un cabinet confortable pour les patients et efficace pour vous.",
+        "paragraphs": [
+          "Un cabinet se prépare autour du parcours du patient : accueil, attente, consultation. Une bonne implantation évite les croisements et préserve la confidentialité.",
+          "L'acoustique est souvent oubliée. Des cloisons adaptées et des portes bien posées évitent que les conversations se propagent jusqu'à la salle d'attente.",
+          "Anticipez les réseaux : eau, électricité, informatique, climatisation. Les prévoir avant les cloisons évite des reprises coûteuses.",
+          "Pensez enfin au calendrier : un chantier bien planifié permet d'ouvrir à la date prévue."
+        ]
+      },
+      "construire-une-villa-les-etapes": {
+        "title": "Construire une villa : les grandes étapes",
+        "excerpt": "De l'étude du terrain à la remise des clés, les étapes à connaître avant de se lancer.",
+        "paragraphs": [
+          "Tout commence par le terrain et les plans : étude du sol, autorisations et choix de l'architecte. Cette phase conditionne la qualité et le coût de la construction.",
+          "Vient ensuite le gros œuvre : fondations, structure, murs et toiture. C'est l'étape la plus longue et celle où le suivi de chantier compte le plus.",
+          "Le second œuvre regroupe les cloisons, la plomberie, l'électricité et les menuiseries. Puis les finitions : carrelage, peinture, éclairage.",
+          "À la fin, une réception avec liste de réserves permet de vérifier chaque détail avant de prendre possession de la villa."
+        ]
+      }
+    }
+  },
+  "common": {
+    "listSeparator": ", "
+  }
+}

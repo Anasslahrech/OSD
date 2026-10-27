@@ -1,31 +1,35 @@
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { ArrowLeft, Check } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import Seo from '../components/Seo'
 import PageShell from './PageShell'
 import { serviceIcons } from '../components/Services'
 import { services } from '../data/site'
 import { projects } from '../data/projects'
+import { cityLabel, tData } from '../lib/i18nHelpers'
 
 export default function ServicePage() {
+  const { t } = useTranslation()
   const { slug } = useParams()
-  const service = services.find((s) => s.slug === slug)
-  if (!service) return <Navigate to="/404" replace />
+  const base = services.find((s) => s.slug === slug)
+  if (!base) return <Navigate to="/404" replace />
+  const service = tData(t, `data.services.${base.slug}`, base)
 
-  const Icon = serviceIcons[service.icon]
+  const Icon = serviceIcons[base.icon]
   const related = projects
     .filter(
       (p) =>
-        p.category === service.category ||
-        (service.category === 'Rénovation' && ['Rénovation intérieure', 'Appartements', 'Maisons'].includes(p.category))
+        p.category === base.category ||
+        (base.category === 'Rénovation' && ['Rénovation intérieure', 'Appartements', 'Maisons'].includes(p.category))
     )
     .slice(0, 3)
 
   return (
     <>
-      <Seo title={service.title} description={service.text} path={`/services/${service.slug}`} />
-      <PageShell eyebrow="Nos services" title={service.title}>
+      <Seo title={service.title} description={service.text} path={`/services/${base.slug}`} />
+      <PageShell eyebrow={t('servicePage.eyebrow')} title={service.title}>
         <Link to="/#services" className="eyebrow mb-10 inline-flex items-center gap-2 text-accent">
-          <ArrowLeft size={14} /> Tous les services
+          <ArrowLeft size={14} className="rtl:rotate-180" /> {t('servicePage.back')}
         </Link>
 
         <div className="grid gap-16 lg:grid-cols-5">
@@ -33,7 +37,7 @@ export default function ServicePage() {
             <Icon className="mb-6 text-bronze" size={38} strokeWidth={1.4} />
             <p className="text-xl leading-relaxed text-charcoal/80">{service.intro}</p>
 
-            <h2 className="mb-6 mt-14 font-display text-4xl">Comment nous travaillons</h2>
+            <h2 className="mb-6 mt-14 font-display text-4xl">{t('servicePage.how')}</h2>
             <ol className="space-y-6">
               {service.steps.map((s, i) => (
                 <li key={s.title} className="flex gap-5">
@@ -49,7 +53,7 @@ export default function ServicePage() {
 
           <aside className="lg:col-span-2">
             <div className="rounded-2xl bg-charcoal p-8 text-bone">
-              <h2 className="mb-5 font-display text-3xl">Les avantages</h2>
+              <h2 className="mb-5 font-display text-3xl">{t('servicePage.benefits')}</h2>
               <ul className="space-y-4">
                 {service.benefits.map((b) => (
                   <li key={b} className="flex gap-3 text-bone/80">
@@ -62,7 +66,7 @@ export default function ServicePage() {
                 to="/#contact"
                 className="eyebrow mt-8 block rounded-full bg-bronze px-6 py-4 text-center text-white transition hover:bg-bronze-light"
               >
-                Demander un devis
+                {t('servicePage.quote')}
               </Link>
             </div>
           </aside>
@@ -70,19 +74,22 @@ export default function ServicePage() {
 
         {related.length > 0 && (
           <div className="mt-20">
-            <h2 className="mb-8 font-display text-4xl">Nos réalisations</h2>
+            <h2 className="mb-8 font-display text-4xl">{t('servicePage.projects')}</h2>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {related.map((p) => (
-                <Link
-                  key={p.id}
-                  to={`/realisations/${p.id}`}
-                  className="rounded-xl border border-charcoal/10 bg-white p-6 transition hover:border-bronze"
-                >
-                  <p className="text-sm text-charcoal/60">{p.service} · {p.city}</p>
-                  <h3 className="mt-1 font-display text-3xl">{p.title}</h3>
-                  <span className="eyebrow mt-4 block text-accent">Voir avant / après →</span>
-                </Link>
-              ))}
+              {related.map((proj) => {
+                const p = tData(t, `data.projects.${proj.id}`, proj)
+                return (
+                  <Link
+                    key={proj.id}
+                    to={`/realisations/${proj.id}`}
+                    className="rounded-xl border border-charcoal/10 bg-white p-6 transition hover:border-bronze"
+                  >
+                    <p className="text-sm text-charcoal/60">{p.service} · {cityLabel(t, proj.city)}</p>
+                    <h3 className="mt-1 font-display text-3xl">{p.title}</h3>
+                    <span className="eyebrow mt-4 block text-accent">{t('servicePage.seeBA')}</span>
+                  </Link>
+                )
+              })}
             </div>
           </div>
         )}

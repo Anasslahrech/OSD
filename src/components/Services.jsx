@@ -1,24 +1,28 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { ArrowUpRight, Building2, Hammer, Stethoscope, PaintRoller, Wrench, Trees } from 'lucide-react'
 import { services } from '../data/site'
+import { tData } from '../lib/i18nHelpers'
 
 export const serviceIcons = { Building2, Hammer, Stethoscope, PaintRoller, Wrench, Trees }
 
 export default function Services() {
+  const { t } = useTranslation()
   return (
     <section id="services" className="bg-bone px-5 py-24 md:px-8 md:py-32">
       <div className="mx-auto max-w-7xl">
         <div className="mb-16 max-w-2xl">
-          <p className="eyebrow mb-4 text-accent">Nos services</p>
-          <h2 className="font-display text-5xl leading-none tracking-tight md:text-6xl">
-            Tout ce qu'il faut pour mener votre projet de bout en bout.
+          <p className="eyebrow mb-4 text-accent">{t('servicesSection.eyebrow')}</p>
+          <h2 className="font-display text-5xl leading-none tracking-tight md:text-6xl rtl:leading-tight">
+            {t('servicesSection.heading')}
           </h2>
         </div>
 
         <div className="grid gap-px overflow-hidden rounded-2xl bg-charcoal/10 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s, i) => {
             const Icon = serviceIcons[s.icon]
+            const tr = tData(t, `data.services.${s.slug}`, s)
             return (
               <motion.div
                 key={s.slug}
@@ -34,11 +38,11 @@ export default function Services() {
                 >
                   <Icon className="mb-8 text-bronze" size={34} strokeWidth={1.4} />
                   <h3 className="mb-3 font-display text-3xl leading-tight transition group-hover:text-bone">
-                    {s.title}
+                    {tr.title}
                   </h3>
-                  <p className="leading-relaxed text-charcoal/70 transition group-hover:text-bone/70">{s.text}</p>
+                  <p className="leading-relaxed text-charcoal/70 transition group-hover:text-bone/70">{tr.text}</p>
                   <span className="eyebrow mt-6 inline-flex items-center gap-2 pt-2 text-accent transition group-hover:text-bronze-light">
-                    En savoir plus <ArrowUpRight size={14} />
+                    {t('servicesSection.more')} <ArrowUpRight size={14} className="rtl:-scale-x-100" />
                   </span>
                 </Link>
               </motion.div>

@@ -1,19 +1,21 @@
 import { useCallback, useRef, useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 function Photo({ src, label, tone }) {
+  const { t } = useTranslation()
   const [failed, setFailed] = useState(false)
   if (failed || !src) {
     return (
       <div className={`flex h-full w-full items-center justify-center ${tone}`}>
-        <span className="eyebrow text-white/60">Photo {label} à ajouter</span>
+        <span className="eyebrow text-white/60">{t('beforeAfter.photoMissing', { label })}</span>
       </div>
     )
   }
   return (
     <img
       src={src}
-      alt={`Photo ${label} travaux`}
+      alt={t('beforeAfter.alt', { label })}
       draggable={false}
       onError={() => setFailed(true)}
       className="h-full w-full select-none object-cover"
@@ -22,6 +24,7 @@ function Photo({ src, label, tone }) {
 }
 
 export default function BeforeAfter({ before, after }) {
+  const { t } = useTranslation()
   const ref = useRef(null)
   const [pos, setPos] = useState(50)
   const dragging = useRef(false)
@@ -47,6 +50,7 @@ export default function BeforeAfter({ before, after }) {
   return (
     <div
       ref={ref}
+      dir="ltr"
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={onPointerUp}
@@ -55,24 +59,24 @@ export default function BeforeAfter({ before, after }) {
       style={{ touchAction: 'pan-y' }}
     >
       <div className="absolute inset-0">
-        <Photo src={after} label="après" tone="bg-[#3d5584]" />
+        <Photo src={after} label={t('beforeAfter.after').toLowerCase()} tone="bg-[#3d5584]" />
       </div>
 
       <div className="absolute inset-0" style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }}>
-        <Photo src={before} label="avant" tone="bg-[#5f7894]" />
+        <Photo src={before} label={t('beforeAfter.before').toLowerCase()} tone="bg-[#5f7894]" />
       </div>
 
       <span className="eyebrow pointer-events-none absolute left-4 top-4 rounded-full bg-charcoal/80 px-3 py-1.5 text-bone">
-        Avant
+        {t('beforeAfter.before')}
       </span>
       <span className="eyebrow pointer-events-none absolute right-4 top-4 rounded-full bg-bronze px-3 py-1.5 text-white">
-        Après
+        {t('beforeAfter.after')}
       </span>
 
       <div className="pointer-events-none absolute inset-y-0 w-0.5 bg-white" style={{ left: `${pos}%` }}>
         <button
           role="slider"
-          aria-label="Comparer avant et après"
+          aria-label={t('beforeAfter.compare')}
           aria-valuemin={0}
           aria-valuemax={100}
           aria-valuenow={Math.round(pos)}

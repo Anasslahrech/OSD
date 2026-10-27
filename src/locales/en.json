@@ -1,0 +1,521 @@
+{
+  "nav": {
+    "services": "Services",
+    "projects": "Projects",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "quote": "Request a quote",
+    "brandLabel": "Overall Style Designer, home",
+    "mainNav": "Main navigation",
+    "mobileNav": "Mobile navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "country": "Morocco",
+    "line1": "We build",
+    "line2": "spaces",
+    "line3": "that last.",
+    "description": "Overall Style Designer builds, renovates and fits out apartments, villas, professional offices and other premises. One team, one detailed quote, one point of contact.",
+    "discover": "Discover our projects",
+    "quote": "Request a quote"
+  },
+  "cities": {
+    "Kénitra": "Kenitra",
+    "Rabat": "Rabat",
+    "Salé": "Salé"
+  },
+  "seo": {
+    "defaultTitle": "{{name}} | Construction and renovation in Kenitra, Rabat and Salé",
+    "homeDescription": "Overall Style Designer builds, renovates and fits out apartments, villas, professional offices and premises in Kenitra, Rabat and Salé. Before/after projects and free quote."
+  },
+  "categories": {
+    "Tous": "All",
+    "Appartements": "Apartments",
+    "Villas": "Villas",
+    "Maisons": "Houses",
+    "Cabinets": "Offices & clinics",
+    "Rénovation intérieure": "Interior renovation",
+    "Rénovation": "Renovation",
+    "Construction": "Construction"
+  },
+  "servicesSection": {
+    "eyebrow": "Our services",
+    "heading": "Everything you need to take your project from start to finish.",
+    "more": "Learn more"
+  },
+  "servicePage": {
+    "eyebrow": "Our services",
+    "back": "All services",
+    "how": "How we work",
+    "benefits": "Benefits",
+    "quote": "Request a quote",
+    "projects": "Our projects",
+    "seeBA": "See before / after →"
+  },
+  "projectsSection": {
+    "eyebrow": "Our projects",
+    "heading": "Before, after: the work speaks for itself.",
+    "filter": "Filter projects",
+    "empty": "No projects in this category yet.",
+    "viewBA": "See before / after",
+    "photoToAdd": "Photo to be added"
+  },
+  "projectPage": {
+    "back": "All projects",
+    "slide": "Drag the slider to compare before and after.",
+    "video": "Your browser cannot play this video.",
+    "service": "Service",
+    "city": "City",
+    "year": "Year",
+    "similar": "A similar project? Request a quote",
+    "others": "Other projects",
+    "seoDesc": "{{service}} in {{city}}: {{description}}"
+  },
+  "beforeAfter": {
+    "before": "Before",
+    "after": "After",
+    "photoMissing": "{{label}} photo to be added",
+    "alt": "{{label}} photo of the works",
+    "compare": "Compare before and after"
+  },
+  "about": {
+    "eyebrow": "About",
+    "heading": "A young company, one team, one standard.",
+    "p1": "{{name}} is a recently founded construction and renovation company. We work in {{zone}} to build, renovate and fit out apartments, villas, professional offices and other premises.",
+    "p2": "You know who answers the phone, who supervises the site and who hands you the keys.",
+    "targets": [
+      "Individuals: apartments, villas, houses",
+      "Professionals: doctors, dentists, lawyers, practices",
+      "Partners: architects, decorators, real estate agencies, developers"
+    ],
+    "stats": [
+      {
+        "label": "Cities served",
+        "suffix": ""
+      },
+      {
+        "label": "To receive your quote",
+        "suffix": " h"
+      },
+      {
+        "label": "Single point of contact",
+        "suffix": ""
+      }
+    ],
+    "values": [
+      {
+        "title": "Quality",
+        "text": "Carefully selected materials and skilled craftsmen, with checks at every stage."
+      },
+      {
+        "title": "On-time delivery",
+        "text": "A clear schedule signed at the start and regular site follow-up."
+      },
+      {
+        "title": "Transparency",
+        "text": "Itemised quote, line by line, with no hidden costs."
+      }
+    ],
+    "methodEyebrow": "Our method",
+    "methodHeading": "Four steps, from the first conversation to handing over the keys.",
+    "method": [
+      {
+        "title": "Listening and site visit",
+        "text": "We visit, listen to your project and note the constraints of the site."
+      },
+      {
+        "title": "Detailed quote",
+        "text": "You receive a clear, itemised quote within 48 hours."
+      },
+      {
+        "title": "Supervised execution",
+        "text": "A dedicated site manager, a shared schedule and progress photos."
+      },
+      {
+        "title": "Handover and follow-up",
+        "text": "Handover with you, snagging list resolved and support after delivery."
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Client reviews",
+    "heading": "They trusted us."
+  },
+  "form": {
+    "eyebrow": "Contact and quote",
+    "heading": "Let's talk about your project.",
+    "intro": "Describe your works: you will receive a reply and a free detailed quote within 48 hours.",
+    "address": "Kenitra, Morocco",
+    "hours": "Mon – Sat · 8:30 am – 6:30 pm",
+    "mapTitle": "Google Maps: {{query}}",
+    "sentTitle": "Request sent",
+    "sentText": "Thank you! We will get back to you very soon to discuss your project.",
+    "sentAgain": "Send another request",
+    "name": "Full name *",
+    "phone": "Phone *",
+    "email": "E-mail *",
+    "city": "Site city *",
+    "cityPlaceholder": "Kenitra, Rabat, Salé…",
+    "type": "Project type *",
+    "select": "Select…",
+    "types": [
+      "Villa construction",
+      "House construction",
+      "Apartment renovation",
+      "Villa or house renovation",
+      "Professional office fit-out",
+      "Other premises fit-out",
+      "Finishing (painting, tiling…)",
+      "Other"
+    ],
+    "budget": "Estimated budget (optional)",
+    "budgetNone": "Not specified",
+    "budgets": [
+      "Under 200,000 MAD",
+      "200,000 – 500,000 MAD",
+      "500,000 – 1,000,000 MAD",
+      "Over 1,000,000 MAD"
+    ],
+    "message": "Description of the works *",
+    "attachment": "Attachment (optional): plan, photo or document",
+    "attachmentChoose": "Choose a file (JPG, PNG, PDF, 2 MB max)",
+    "consentBefore": "I agree that my information may be used to respond to my request, in accordance with the",
+    "consentLink": "privacy policy",
+    "consentAfter": "(law 09-08). *",
+    "sendError": "Sending failed. Please try again or write to us at {{email}}.",
+    "submit": "Send my quote request",
+    "errors": {
+      "file": "JPG, PNG, WebP or PDF file, 2 MB maximum.",
+      "name": "Please enter your name.",
+      "phone": "Invalid Moroccan phone number.",
+      "email": "Invalid e-mail.",
+      "type": "Please choose a project type.",
+      "city": "Please enter the site city.",
+      "message": "Please briefly describe your works.",
+      "consent": "Your consent is required to process your request."
+    }
+  },
+  "cookie": {
+    "label": "Cookie consent",
+    "text": "We use audience measurement cookies to improve the site. You can accept or refuse them at any time.",
+    "policy": "Privacy policy",
+    "accept": "Accept",
+    "refuse": "Refuse"
+  },
+  "floating": {
+    "call": "Call",
+    "whatsapp": "Message on WhatsApp",
+    "message": "Hello {{name}}, I would like a quote for a project."
+  },
+  "footer": {
+    "text": "Construction, renovation and fit-out of apartments, villas, offices and other premises in {{zone}}.",
+    "nav": "Footer",
+    "legal": "Legal notice",
+    "privacy": "Privacy",
+    "cookies": "Manage cookies",
+    "follow": "Follow us",
+    "rights": "All rights reserved."
+  },
+  "blog": {
+    "seoTitle": "Blog and advice",
+    "seoDesc": "Advice for successful construction, renovation and office fit-out projects in Morocco.",
+    "eyebrow": "Blog",
+    "title": "Renovation and construction advice.",
+    "categories": "Article categories",
+    "all": "All articles",
+    "ctaTitle": "Have a project in mind?",
+    "ctaText": "Describe your works and we will reply with a free detailed quote.",
+    "ctaButton": "Request a quote"
+  },
+  "notFound": {
+    "seoTitle": "Page not found",
+    "seoDesc": "This page does not exist.",
+    "eyebrow": "Error 404",
+    "title": "Page not found.",
+    "text": "The page you are looking for does not exist or has been moved.",
+    "home": "Back to home"
+  },
+  "legal": {
+    "seoTitle": "Legal notice",
+    "seoDesc": "Legal notice of the {{name}} website.",
+    "eyebrow": "Legal information",
+    "title": "Legal notice",
+    "todo": "[to be completed]",
+    "editor": "Site publisher",
+    "companyName": "Company name",
+    "legalForm": "Legal form",
+    "capital": "Capital",
+    "ice": "ICE",
+    "rc": "Trade register",
+    "if": "Tax ID",
+    "address": "Registered office",
+    "phone": "Phone",
+    "email": "E-mail",
+    "director": "Publication director",
+    "hostingTitle": "Hosting",
+    "ipTitle": "Intellectual property",
+    "ipText": "The texts, photos, videos, logos and graphic elements of this site belong to {{name}} or are used with their authors' permission. Any reproduction without written authorisation is prohibited.",
+    "liabilityTitle": "Liability",
+    "liabilityText": "{{name}} strives to provide accurate and up-to-date information but cannot guarantee the absence of errors. Photos of completed projects are shown for illustration purposes. Quotes are binding for any service."
+  },
+  "privacy": {
+    "seoTitle": "Privacy policy",
+    "seoDesc": "How {{name}} protects your personal data (law 09-08).",
+    "eyebrow": "Personal data",
+    "title": "Privacy policy",
+    "controllerTitle": "Data controller",
+    "controllerText": "{{name}}, reachable at {{email}}. This policy is established in accordance with Moroccan law no. 09-08 on the protection of individuals with regard to the processing of personal data.",
+    "dataTitle": "Data collected",
+    "dataText": "Via the quote form: name, phone, e-mail, city, project type, budget, description of the works and, if you wish, an attachment. This information is provided voluntarily by you.",
+    "purposeTitle": "Purposes",
+    "purposeText": "Your data is used only to respond to your request, prepare a quote and contact you about it. It is neither sold nor transferred to third parties for commercial purposes.",
+    "retentionTitle": "Retention period",
+    "retentionText": "Quote requests are kept for as long as needed to process your project, then deleted no later than 3 years after the last exchange.",
+    "cookiesTitle": "Cookies and audience measurement",
+    "cookiesText": "With your consent, we may use audience measurement tools (Google Analytics, Meta Pixel) to understand how the site is used. You can accept or refuse, and change your choice at any time.",
+    "cookiesButton": "Change my choice",
+    "rightsTitle": "Your rights",
+    "rightsText": "Under law 09-08, you have the right to access, rectify and object to the processing of your data. To exercise it, write to us at {{email}}. You may also contact the National Commission for the Control of Personal Data Protection (CNDP)."
+  },
+  "data": {
+    "services": {
+      "construction": {
+        "title": "Villa and house construction",
+        "text": "From the slab to handover: structural work, finishing work and final touches, with a single point of contact.",
+        "intro": "Do you have a plot of land and a villa or house project? We handle the entire construction, from structural work to finishing, with a detailed schedule and quote from the start.",
+        "steps": [
+          {
+            "title": "Project study",
+            "text": "Site visit, understanding your needs, validating the plans with your architect."
+          },
+          {
+            "title": "Detailed quote",
+            "text": "Itemised pricing: earthworks, structural work, finishing work, final touches."
+          },
+          {
+            "title": "Supervised site",
+            "text": "Signed schedule, regular updates and progress photos."
+          },
+          {
+            "title": "Handover",
+            "text": "Final inspection, snagging and handing over the keys."
+          }
+        ],
+        "benefits": [
+          "One point of contact from start to finish",
+          "Selected materials and skilled craftsmen",
+          "Clear schedule and budget from signing"
+        ]
+      },
+      "renovation": {
+        "title": "Full or partial renovation",
+        "text": "Transformation of apartments, houses and villas: structure, layout, facade and compliance upgrades.",
+        "intro": "Old apartment, house to modernise, villa to extend: we renovate entirely or room by room, limiting disruption and respecting your deadlines.",
+        "steps": [
+          {
+            "title": "Assessment",
+            "text": "Survey, identification of technical constraints and priority works."
+          },
+          {
+            "title": "Proposal and quote",
+            "text": "Solutions suited to your budget, with options priced separately."
+          },
+          {
+            "title": "Works",
+            "text": "Demolition, structural repairs, plumbing, electrics, partitions and coverings."
+          },
+          {
+            "title": "Finishing and handover",
+            "text": "Painting, fitting, end-of-site cleaning and handover with you."
+          }
+        ],
+        "benefits": [
+          "Full or phased renovation",
+          "Clean and protected site",
+          "Plumbing and electrical upgrades to standard"
+        ]
+      },
+      "amenagement-cabinets": {
+        "title": "Office and clinic fit-out",
+        "text": "Medical, dental and legal practices and offices: circulation, acoustics, lighting and careful finishing.",
+        "intro": "Doctors, dentists, lawyers, architects: your premises are your working tool. We fit them out to be functional, welcoming and delivered on schedule so your opening is not delayed.",
+        "steps": [
+          {
+            "title": "Needs brief",
+            "text": "Waiting room, consulting room, sterilisation, archives: each use is defined with you."
+          },
+          {
+            "title": "Plan and quote",
+            "text": "Room layout, utilities (water, electricity, data) and detailed pricing."
+          },
+          {
+            "title": "Execution",
+            "text": "Partitions, false ceilings, electrics, plumbing, bespoke joinery, coverings."
+          },
+          {
+            "title": "Turnkey delivery",
+            "text": "Premises ready to equip and to welcome your patients or clients."
+          }
+        ],
+        "benefits": [
+          "Strict respect of the opening schedule",
+          "Suitable acoustic comfort and lighting",
+          "Professional and polished image"
+        ]
+      },
+      "finitions": {
+        "title": "Painting, tiling and coverings",
+        "text": "Zellige, marble, large-format tiles, decorative plasters and high-end painting.",
+        "intro": "Finishing makes the difference. We lay tiles, marble, zellige and decorative coverings, and carry out clean, durable paintwork suited to every room.",
+        "steps": [
+          {
+            "title": "Choice of materials",
+            "text": "Advice on colours, formats and materials depending on how each room is used."
+          },
+          {
+            "title": "Surface preparation",
+            "text": "Levelling, plastering and treatments for a perfectly flat base."
+          },
+          {
+            "title": "Fitting and application",
+            "text": "Careful laying, even joints, multi-coat painting."
+          },
+          {
+            "title": "Final check",
+            "text": "Room-by-room inspection before handing over the keys."
+          }
+        ],
+        "benefits": [
+          "Careful fitting and precise alignment",
+          "Wide choice of coverings",
+          "Durable finishes"
+        ]
+      },
+      "plomberie-electricite": {
+        "title": "Plumbing and electrics",
+        "text": "New installations or complete rework, compliant and tested before delivery.",
+        "intro": "Water supply, drainage, electrical panels, lighting: we carry out new installations or rework existing ones for greater safety and comfort.",
+        "steps": [
+          {
+            "title": "Survey and diagram",
+            "text": "Locating water and electrical points, sizing the networks."
+          },
+          {
+            "title": "Installation",
+            "text": "Fitting pipes, conduits, panel and fixtures."
+          },
+          {
+            "title": "Testing",
+            "text": "Pressure tests, checking protections and operation."
+          },
+          {
+            "title": "Plans handover",
+            "text": "Circuit marking to make future work easier."
+          }
+        ],
+        "benefits": [
+          "Compliant and safe installations",
+          "Tests before delivery",
+          "Discreet integration into the decor"
+        ]
+      },
+      "amenagement-interieur-exterieur": {
+        "title": "Interior and exterior fit-out",
+        "text": "Kitchens, dressing rooms, bespoke joinery, terraces, swimming pools and gardens.",
+        "intro": "Open kitchen, custom dressing room, terrace, pool or garden: we design your living spaces to be beautiful, practical and easy to maintain.",
+        "steps": [
+          {
+            "title": "Design",
+            "text": "Plans, moods and choice of materials with you."
+          },
+          {
+            "title": "Fabrication and preparation",
+            "text": "Bespoke joinery and preparation of interior and exterior surfaces."
+          },
+          {
+            "title": "Installation",
+            "text": "Fitting, connections and outdoor works."
+          },
+          {
+            "title": "Handover",
+            "text": "Finish inspection and maintenance advice."
+          }
+        ],
+        "benefits": [
+          "Bespoke joinery",
+          "Consistency between interior and exterior",
+          "Maintenance advice included"
+        ]
+      }
+    },
+    "projects": {
+      "villa-mehdia": {
+        "title": "Villa Mehdia",
+        "service": "Turnkey construction",
+        "description": "Full construction of a villa: structural work, finishing work and final touches, delivered with a single point of contact."
+      },
+      "maison-souissi": {
+        "title": "Souissi House",
+        "service": "Full renovation",
+        "description": "Full renovation: room layout, electrics, plumbing and coverings."
+      },
+      "cabinet-agdal": {
+        "title": "Agdal Dental Clinic",
+        "service": "Clinic fit-out",
+        "description": "Fit-out of a dental clinic: waiting room, treatment rooms, utilities and finishing."
+      },
+      "appartement-sale": {
+        "title": "Hay Salam Apartment",
+        "service": "Full renovation",
+        "description": "Apartment renovation: opened-up kitchen, new tiling, bathroom and painting."
+      },
+      "salon-cuisine-kenitra": {
+        "title": "Living room and kitchen, Kenitra",
+        "service": "Interior fit-out",
+        "description": "Redesign of a living room and open kitchen with bespoke joinery."
+      },
+      "villa-harhoura": {
+        "title": "Harhoura Villa",
+        "service": "Renovation and extension",
+        "description": "Renovation of an existing villa and upper-floor extension with a terrace."
+      }
+    },
+    "posts": {
+      "renover-un-appartement-par-ou-commencer": {
+        "title": "Renovating an apartment: where to start?",
+        "excerpt": "The first decisions to make before starting works, to keep the budget and schedule under control.",
+        "paragraphs": [
+          "Before choosing the colour of the walls, start by defining the goal of your renovation: gaining space, modernising, or bringing the apartment up to standard. This goal guides every choice that follows.",
+          "Then carry out a survey: damp, electrics, plumbing, floors. These hidden works weigh the most on the budget, so it is better to know about them before signing a quote.",
+          "Ask for an itemised quote with a schedule. This lets you compare, prioritise and, if needed, split the works into several phases.",
+          "Finally, allow a margin for the unexpected. In a renovation it is common to discover problems once the walls are opened."
+        ]
+      },
+      "amenager-un-cabinet-medical-points-cles": {
+        "title": "Fitting out a medical practice: the key points",
+        "excerpt": "Circulation, acoustics, utilities: what to plan for a practice that is comfortable for patients and efficient for you.",
+        "paragraphs": [
+          "A practice is designed around the patient journey: reception, waiting, consultation. A good layout avoids crossings and protects confidentiality.",
+          "Acoustics are often forgotten. Suitable partitions and well-fitted doors stop conversations from carrying into the waiting room.",
+          "Plan the utilities ahead: water, electricity, IT, air conditioning. Planning them before the partitions avoids costly rework.",
+          "Finally, think about the schedule: a well-planned site lets you open on the planned date."
+        ]
+      },
+      "construire-une-villa-les-etapes": {
+        "title": "Building a villa: the main stages",
+        "excerpt": "From the land study to handing over the keys, the stages to know before getting started.",
+        "paragraphs": [
+          "Everything starts with the land and the plans: soil study, permits and choice of architect. This phase determines the quality and cost of the construction.",
+          "Next comes the structural work: foundations, structure, walls and roof. It is the longest stage and the one where site supervision matters most.",
+          "The finishing work covers partitions, plumbing, electrics and joinery. Then the final touches: tiling, painting, lighting.",
+          "At the end, a handover with a snagging list lets you check every detail before taking possession of the villa."
+        ]
+      }
+    }
+  },
+  "common": {
+    "listSeparator": ", "
+  }
+}

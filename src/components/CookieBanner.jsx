@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { getConsent, setConsent } from '../lib/consent'
 
 export default function CookieBanner() {
+  const { t } = useTranslation()
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
@@ -22,14 +24,13 @@ export default function CookieBanner() {
   return (
     <div
       role="dialog"
-      aria-label="Consentement aux cookies"
+      aria-label={t('cookie.label')}
       className="fixed inset-x-3 bottom-3 z-[70] mx-auto max-w-3xl rounded-2xl bg-charcoal p-5 text-bone shadow-2xl md:bottom-5 md:p-6"
     >
       <p className="text-sm leading-relaxed text-bone/80">
-        Nous utilisons des cookies de mesure d'audience pour améliorer le site. Vous pouvez les accepter ou les
-        refuser à tout moment.{' '}
+        {t('cookie.text')}{' '}
         <Link to="/confidentialite" className="underline hover:text-bronze-light">
-          Politique de confidentialité
+          {t('cookie.policy')}
         </Link>
       </p>
       <div className="mt-4 flex flex-col gap-3 sm:flex-row">
@@ -37,13 +38,13 @@ export default function CookieBanner() {
           onClick={() => choose('granted')}
           className="eyebrow rounded-full bg-bronze px-6 py-3.5 text-white transition hover:bg-bronze-light"
         >
-          Accepter
+          {t('cookie.accept')}
         </button>
         <button
           onClick={() => choose('denied')}
           className="eyebrow rounded-full border border-bone/50 px-6 py-3.5 text-bone transition hover:border-bronze"
         >
-          Refuser
+          {t('cookie.refuse')}
         </button>
       </div>
     </div>

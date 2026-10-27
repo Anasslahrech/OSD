@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom'
 import { Facebook, Instagram, Linkedin } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import Brand from './Brand'
 import { site } from '../data/site'
 import { openCookieSettings } from '../lib/consent'
+import { cityLabel } from '../lib/i18nHelpers'
 
 function TikTok({ size = 20 }) {
   return (
@@ -20,32 +22,33 @@ const socials = [
 ]
 
 export default function Footer() {
+  const { t } = useTranslation()
+  const zone = site.zone.map((z) => cityLabel(t, z)).join(t('common.listSeparator'))
   return (
     <footer className="bg-charcoal px-5 py-14 text-bone/70 md:px-8">
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-3">
         <div>
           <Brand className="text-bone" />
           <p className="mt-5 max-w-xs text-sm leading-relaxed">
-            Construction, rénovation et aménagement d'appartements, villas, cabinets et autres locaux à{' '}
-            {site.zone.join(', ')}.
+            {t('footer.text', { zone })}
           </p>
         </div>
 
-        <nav className="grid grid-cols-2 gap-3 text-sm" aria-label="Pied de page">
-          <Link to="/#services" className="hover:text-bronze-light">Services</Link>
-          <Link to="/#projets" className="hover:text-bronze-light">Réalisations</Link>
-          <Link to="/#apropos" className="hover:text-bronze-light">À propos</Link>
-          <Link to="/blog" className="hover:text-bronze-light">Blog</Link>
-          <Link to="/#contact" className="hover:text-bronze-light">Contact</Link>
-          <Link to="/mentions-legales" className="hover:text-bronze-light">Mentions légales</Link>
-          <Link to="/confidentialite" className="hover:text-bronze-light">Confidentialité</Link>
-          <button onClick={openCookieSettings} className="text-left hover:text-bronze-light">
-            Gérer les cookies
+        <nav className="grid grid-cols-2 gap-3 text-sm" aria-label={t('footer.nav')}>
+          <Link to="/#services" className="hover:text-bronze-light">{t('nav.services')}</Link>
+          <Link to="/#projets" className="hover:text-bronze-light">{t('nav.projects')}</Link>
+          <Link to="/#apropos" className="hover:text-bronze-light">{t('nav.about')}</Link>
+          <Link to="/blog" className="hover:text-bronze-light">{t('nav.blog')}</Link>
+          <Link to="/#contact" className="hover:text-bronze-light">{t('nav.contact')}</Link>
+          <Link to="/mentions-legales" className="hover:text-bronze-light">{t('footer.legal')}</Link>
+          <Link to="/confidentialite" className="hover:text-bronze-light">{t('footer.privacy')}</Link>
+          <button onClick={openCookieSettings} className="text-start hover:text-bronze-light">
+            {t('footer.cookies')}
           </button>
         </nav>
 
         <div>
-          <p className="eyebrow mb-4 text-bone">Suivez-nous</p>
+          <p className="eyebrow mb-4 text-bone">{t('footer.follow')}</p>
           <ul className="flex gap-3">
             {socials.map(({ key, label, Icon }) => (
               <li key={key}>
@@ -65,7 +68,7 @@ export default function Footer() {
       </div>
 
       <p className="mx-auto mt-12 max-w-7xl border-t border-white/10 pt-6 text-sm">
-        © {new Date().getFullYear()} {site.name}. Tous droits réservés.
+        © {new Date().getFullYear()} {site.name}. {t('footer.rights')}
       </p>
     </footer>
   )
