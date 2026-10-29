@@ -4,27 +4,28 @@ export const site = {
   name: 'Overall Style Designer',
   shortName: 'OSD',
   tagline: 'Construire, rénover et aménager vos espaces.',
-  zone: ['Kénitra', 'Rabat', 'Salé'],
+  zone: ['Rabat', 'Salé', 'Kénitra', 'Tanger et régions', 'Khemisset'],
   city: 'Kénitra',
-  phone: '+212 6 00 00 00 00',
-  phoneRaw: '+212600000000',
-  whatsapp: '212600000000', // sans le +
-  email: 'contact@osd.ma',
+  phone: '06 07 02 20 22',
+  phoneRaw: '+212607022022',
+  whatsapp: '212607022022', // sans le +
+  email: 'overalstyle.inf@gmail.com',
   address: 'Kénitra, Maroc',
   hours: 'Lun – Sam · 8h30 – 18h30',
   // Requête utilisée par la carte Google Maps (remplacer par l'adresse exacte du bureau)
-  mapQuery: 'Kénitra, Maroc',
-  social: {
-    instagram: '#',
+    mapQuery: '34.26287078857422,-6.627573490142822',
+  mapLink: 'https://maps.google.com/maps?q=34.26287078857422%2C-6.627573490142822&z=17&hl=fr',
+   social: {
+    instagram: 'https://www.instagram.com/overall_style_designer',
     facebook: '#',
     tiktok: '#',
     linkedin: '#',
   },
   // Chiffres neutres pour une entreprise récente (à remplacer par de vrais chiffres au fil des chantiers)
   stats: [
-    { value: 3, suffix: '', label: "Villes d'intervention" },
-    { value: 48, suffix: ' h', label: 'Pour recevoir votre devis' },
-    { value: 1, suffix: '', label: 'Interlocuteur unique' },
+    { value: 30, suffix: '+', label: "Ans d'expérience" },
+    { value: 5, suffix: '', label: "Villes d'intervention" },
+    { value: 5, suffix: '', label: "Étapes, de l'écoute à la garantie" },
   ],
 }
 
@@ -77,18 +78,34 @@ export const services = [
   {
     slug: 'amenagement-cabinets',
     icon: 'Stethoscope',
-    title: 'Aménagement de cabinets',
-    text: 'Cabinets médicaux, dentaires, juridiques et bureaux : circulation, acoustique, éclairage et finitions soignées.',
+    title: 'Aménagement des espaces plateau',
+    text: 'Cabinets médicaux, laboratoires d\'analyses, espaces commerciaux : circulation, acoustique, éclairage et finitions soignées.',
     intro:
-      "Médecins, dentistes, avocats, architectes : votre local est votre outil de travail. Nous l'aménageons pour qu'il soit fonctionnel, accueillant et livré à la date prévue pour ne pas retarder votre ouverture.",
+      "Cabinet médical, laboratoire d'analyses, espace commercial : votre local est votre outil de travail. Nous l'aménageons pour qu'il soit fonctionnel, accueillant et livré à la date prévue pour ne pas retarder votre ouverture.",
     steps: [
-      { title: 'Cahier des besoins', text: 'Salle d\'attente, cabinet, stérilisation, archives : chaque usage est défini avec vous.' },
+      { title: 'Cahier des besoins', text: 'Accueil, salles de soins ou d\'analyses, espace de vente, stockage : chaque usage est défini avec vous.' },
       { title: 'Plan et devis', text: 'Implantation des pièces, réseaux (eau, électricité, données) et chiffrage détaillé.' },
       { title: 'Réalisation', text: 'Cloisons, faux plafonds, électricité, plomberie, menuiserie sur mesure, revêtements.' },
       { title: 'Livraison clés en main', text: 'Local prêt à équiper et à recevoir vos patients ou clients.' },
     ],
     benefits: ['Respect strict du calendrier d\'ouverture', 'Confort acoustique et éclairage adaptés', 'Image professionnelle et soignée'],
     category: 'Cabinets',
+  },
+  {
+    slug: 'amenagement-facades',
+    icon: 'Layers',
+    title: 'Aménagement de façades',
+    text: 'Habillage en alucobond, profil trespa, aluminium, bardage et autres solutions pour une façade moderne et durable.',
+    intro:
+      "Une façade donne la première impression de votre bâtiment. Nous réalisons l'habillage en alucobond, en profil trespa, en aluminium, le bardage et d'autres solutions pour moderniser et protéger vos façades.",
+    steps: [
+      { title: 'Relevé et choix des matériaux', text: 'Visite du bâtiment, relevé des dimensions et choix de l\'habillage et des teintes.' },
+      { title: 'Plan et devis', text: 'Chiffrage détaillé et calepinage de la façade avant le début des travaux.' },
+      { title: 'Pose de l\'habillage', text: 'Ossature, fixation et pose de l\'alucobond, du trespa, de l\'aluminium ou du bardage.' },
+      { title: 'Contrôle final', text: 'Vérification des alignements, des joints et des finitions avant réception.' },
+    ],
+    benefits: ['Alucobond, trespa, aluminium, bardage', 'Façade moderne et résistante', 'Finitions nettes et alignements précis'],
+    category: 'Rénovation',
   },
   {
     slug: 'finitions',
@@ -126,32 +143,53 @@ export const services = [
     slug: 'amenagement-interieur-exterieur',
     icon: 'Trees',
     title: 'Aménagement intérieur et extérieur',
-    text: 'Cuisines, dressings, menuiserie sur mesure, terrasses, piscines et jardins.',
+    text: 'Cuisines, dressings, menuiserie sur mesure, travaux en placoplâtre (biatris), terrasses, piscines et jardins.',
     intro:
       "Cuisine ouverte, dressing sur mesure, terrasse, piscine ou jardin : nous aménageons vos espaces de vie pour qu'ils soient beaux, pratiques et faciles à entretenir.",
     steps: [
       { title: 'Conception', text: 'Plans, ambiances et choix des matériaux avec vous.' },
-      { title: 'Fabrication et préparation', text: 'Menuiserie sur mesure et préparation des supports intérieurs et extérieurs.' },
+      { title: 'Fabrication et préparation', text: 'Menuiserie sur mesure, travaux en placoplâtre (biatris) et préparation des supports intérieurs et extérieurs.' },
       { title: 'Installation', text: 'Pose, raccordements et aménagements extérieurs.' },
       { title: 'Réception', text: 'Contrôle des finitions et conseils d\'entretien.' },
     ],
-    benefits: ['Menuiserie sur mesure', 'Cohérence entre intérieur et extérieur', 'Conseils d\'entretien inclus'],
+    benefits: ['Menuiserie sur mesure', 'Travaux en placoplâtre (biatris)', 'Cohérence entre intérieur et extérieur', 'Conseils d\'entretien inclus'],
     category: 'Rénovation',
+  },
+  {
+    slug: 'isolation',
+    icon: 'Package',
+    title: 'Vente de produits d\'isolation',
+    text: 'Polystyrène, polyuréthane et polycoffre, en collaboration avec SMH Le Designeur.',
+    intro:
+      "Nous proposons à la vente des produits d'isolation : polystyrène, polyuréthane et polycoffre, en collaboration avec SMH Le Designeur.",
+    steps: [
+      { title: 'Choix du produit', text: 'Conseil sur le type d\'isolant adapté à votre projet : polystyrène, polyuréthane ou polycoffre.' },
+      { title: 'Devis', text: 'Quantités et prix détaillés selon vos besoins.' },
+      { title: 'Livraison', text: 'Commande préparée et livrée selon le calendrier de votre chantier.' },
+    ],
+    benefits: ['Polystyrène, polyuréthane, polycoffre', 'Conseil pour choisir le bon isolant', 'En collaboration avec SMH Le Designeur'],
+    category: 'Isolation',
+    partner: {
+      label: 'En collaboration avec',
+      name: 'SMH Le Designeur',
+      logo: '/images/smh-le-designeur.png',
+    },
   },
 ]
 
 export const values = [
-  { title: 'Qualité', text: 'Des matériaux sélectionnés et des artisans qualifiés, contrôle à chaque étape.' },
-  { title: 'Délais respectés', text: 'Un planning clair signé au départ, un suivi régulier du chantier.' },
-  { title: 'Transparence', text: 'Devis détaillé poste par poste, aucun coût caché.' },
+  { title: 'Rigueur', text: 'Des chantiers organisés, suivis et contrôlés.' },
+  { title: 'Transparence', text: 'Des devis clairs, une communication honnête.' },
+  { title: 'Esthétique', text: 'Le souci du détail, du choix des matériaux à la finition.' },
+  { title: 'Respect des engagements', text: 'Des délais et des budgets annoncés pour être tenus.' },
 ]
 
-// Méthode de travail (page À propos)
 export const method = [
   { title: 'Écoute et visite', text: 'Nous nous déplaçons, écoutons votre projet et relevons les contraintes du lieu.' },
-  { title: 'Devis détaillé', text: 'Vous recevez un devis clair, poste par poste, sous 48 h.' },
-  { title: 'Réalisation suivie', text: 'Un chef de chantier dédié, un planning partagé et des photos d\'avancement.' },
-  { title: 'Livraison et suivi', text: 'Réception avec vous, levée des réserves et assistance après livraison.' },
+  { title: 'Devis et conception', text: 'Un devis clair, poste par poste, et une conception adaptée à votre projet.' },
+  { title: 'Planification', text: 'Un planning précis, validé avec vous avant le début des travaux.' },
+  { title: 'Réalisation et suivi', text: 'Un chantier organisé, suivi et contrôlé, avec des points réguliers.' },
+  { title: 'Livraison et garantie', text: 'Réception avec vous, levée des réserves et garantie après livraison.' },
 ]
 
 export const targets = [
@@ -168,5 +206,7 @@ export const projectTypes = [
   'Aménagement de cabinet professionnel',
   'Aménagement d\'autres locaux',
   'Finitions (peinture, carrelage…)',
+  'Aménagement de façade',
+  'Produits d\'isolation',
   'Autre',
 ]

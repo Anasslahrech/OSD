@@ -3,7 +3,7 @@ import { ArrowLeft, Check } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import Seo from '../components/Seo'
 import PageShell from './PageShell'
-import { serviceIcons } from '../components/Services'
+import { serviceIcons, Partner } from '../components/Services'
 import { services } from '../data/site'
 import { projects } from '../data/projects'
 import { cityLabel, tData } from '../lib/i18nHelpers'
@@ -36,6 +36,7 @@ export default function ServicePage() {
           <div className="lg:col-span-3">
             <Icon className="mb-6 text-bronze" size={38} strokeWidth={1.4} />
             <p className="text-xl leading-relaxed text-charcoal/80">{service.intro}</p>
+            <Partner partner={base.partner} />
 
             <h2 className="mb-6 mt-14 font-display text-4xl">{t('servicePage.how')}</h2>
             <ol className="space-y-6">

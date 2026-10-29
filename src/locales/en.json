@@ -19,16 +19,24 @@
     "line3": "that last.",
     "description": "Overall Style Designer builds, renovates and fits out apartments, villas, professional offices and other premises. One team, one detailed quote, one point of contact.",
     "discover": "Discover our projects",
+        "points": [
+      "A single point of contact, from the first meeting to the handover of the keys",
+      "A clear budget and schedule from the start",
+      "Careful finishing, from the details to the final result",
+      "Regular follow-up of your site, even from a distance"
+    ],
     "quote": "Request a quote"
   },
-  "cities": {
+   "cities": {
     "Kénitra": "Kenitra",
     "Rabat": "Rabat",
-    "Salé": "Salé"
+    "Salé": "Salé",
+    "Tanger et régions": "Tangier and surrounding areas",
+    "Khemisset": "Khemisset"
   },
-  "seo": {
-    "defaultTitle": "{{name}} | Construction and renovation in Kenitra, Rabat and Salé",
-    "homeDescription": "Overall Style Designer builds, renovates and fits out apartments, villas, professional offices and premises in Kenitra, Rabat and Salé. Before/after projects and free quote."
+    "seo": {
+    "defaultTitle": "{{name}} | Construction and renovation in Kenitra, Rabat, Salé, Khemisset and Tangier",
+    "homeDescription": "Overall Style Designer builds, renovates and fits out apartments, villas, professional offices and premises in Kenitra, Rabat, Salé, Khemisset and Tangier. Before/after projects and free quote."
   },
   "categories": {
     "Tous": "All",
@@ -80,64 +88,43 @@
     "alt": "{{label}} photo of the works",
     "compare": "Compare before and after"
   },
-  "about": {
+    "about": {
     "eyebrow": "About",
-    "heading": "A young company, one team, one standard.",
-    "p1": "{{name}} is a recently founded construction and renovation company. We work in {{zone}} to build, renovate and fit out apartments, villas, professional offices and other premises.",
-    "p2": "You know who answers the phone, who supervises the site and who hands you the keys.",
+    "badge": "of experience",
+    "heading": "An experienced team, one standard.",
+    "p1": "{{name}} is a construction and renovation company with over 30 years of experience. We work in {{zone}} to build, renovate and fit out apartments, villas, professional offices and other premises.",
+    "p2": "We offer a different way to build and renovate: clearer, more refined, and closer to what clients expect.",
+    "mission": "Our mission: to support every client in bringing their project to life, with a global vision covering architecture, construction, finishing and the aesthetics of the space.",
+    "targetsTitle": "Who do we work for?",
     "targets": [
       "Individuals: apartments, villas, houses",
       "Professionals: doctors, dentists, lawyers, practices",
       "Partners: architects, decorators, real estate agencies, developers"
     ],
     "stats": [
-      {
-        "label": "Cities served",
-        "suffix": ""
-      },
-      {
-        "label": "To receive your quote",
-        "suffix": " h"
-      },
-      {
-        "label": "Single point of contact",
-        "suffix": ""
-      }
+      { "label": "Years of experience", "suffix": "+" },
+      { "label": "Cities served", "suffix": "" },
+      { "label": "Steps, from listening to warranty", "suffix": "" }
     ],
+    "valuesTitle": "Our values",
     "values": [
-      {
-        "title": "Quality",
-        "text": "Carefully selected materials and skilled craftsmen, with checks at every stage."
-      },
-      {
-        "title": "On-time delivery",
-        "text": "A clear schedule signed at the start and regular site follow-up."
-      },
-      {
-        "title": "Transparency",
-        "text": "Itemised quote, line by line, with no hidden costs."
-      }
+      { "title": "Rigour", "text": "Sites that are organised, monitored and inspected." },
+      { "title": "Transparency", "text": "Clear quotes and honest communication." },
+      { "title": "Aesthetics", "text": "Attention to detail, from the choice of materials to the finishing." },
+      { "title": "Keeping our commitments", "text": "Deadlines and budgets announced to be met." }
     ],
     "methodEyebrow": "Our method",
-    "methodHeading": "Four steps, from the first conversation to handing over the keys.",
+    "methodHeading": "Five steps, from the first conversation to the warranty.",
     "method": [
-      {
-        "title": "Listening and site visit",
-        "text": "We visit, listen to your project and note the constraints of the site."
-      },
-      {
-        "title": "Detailed quote",
-        "text": "You receive a clear, itemised quote within 48 hours."
-      },
-      {
-        "title": "Supervised execution",
-        "text": "A dedicated site manager, a shared schedule and progress photos."
-      },
-      {
-        "title": "Handover and follow-up",
-        "text": "Handover with you, snagging list resolved and support after delivery."
-      }
-    ]
+      { "title": "Listening and site visit", "text": "We visit, listen to your project and note the constraints of the site." },
+      { "title": "Quote and design", "text": "A clear, itemised quote and a design suited to your project." },
+      { "title": "Planning", "text": "A precise schedule, agreed with you before work begins." },
+      { "title": "Execution and follow-up", "text": "An organised, monitored and inspected site, with regular updates." },
+      { "title": "Delivery and warranty", "text": "Handover with you, snagging resolved and a warranty after delivery." }
+    ],
+    "abroadTitle": "Are you abroad?",
+    "abroadText": "Building or renovating in Morocco from abroad? We keep you informed throughout the project: photos, videos and regular video-call updates.",
+    "abroadItems": ["Photos", "Videos", "Video-call updates"]
   },
   "testimonials": {
     "eyebrow": "Client reviews",
@@ -146,7 +133,7 @@
   "form": {
     "eyebrow": "Contact and quote",
     "heading": "Let's talk about your project.",
-    "intro": "Describe your works: you will receive a reply and a free detailed quote within 48 hours.",
+        "intro": "Tell us about your idea and we will reply quickly with a tailored proposal.",
     "address": "Kenitra, Morocco",
     "hours": "Mon – Sat · 8:30 am – 6:30 pm",
     "mapTitle": "Google Maps: {{query}}",
@@ -157,6 +144,7 @@
     "phone": "Phone *",
     "email": "E-mail *",
     "city": "Site city *",
+        "openMap": "Open in Google Maps",
     "cityPlaceholder": "Kenitra, Rabat, Salé…",
     "type": "Project type *",
     "select": "Select…",

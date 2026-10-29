@@ -50,7 +50,7 @@ export default function Footer() {
         <div>
           <p className="eyebrow mb-4 text-bone">{t('footer.follow')}</p>
           <ul className="flex gap-3">
-            {socials.map(({ key, label, Icon }) => (
+            {socials.filter(({ key }) => site.social[key] && site.social[key] !== '#').map(({ key, label, Icon }) => (
               <li key={key}>
                 <a
                   href={site.social[key]}

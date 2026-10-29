@@ -1,11 +1,13 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Check } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { site } from '../data/site'
+import { tList } from '../lib/i18nHelpers'
 
 export default function Hero() {
   const { t } = useTranslation()
+  const points = tList(t, 'hero.points', [])
 
   return (
     <section id="accueil" className="relative flex min-h-screen items-end overflow-hidden bg-charcoal">
@@ -18,22 +20,24 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/60 to-charcoal/30" />
       <div className="absolute inset-0 bg-gradient-to-r from-charcoal/70 via-transparent to-transparent rtl:bg-gradient-to-l" />
 
-      <div className="relative mx-auto w-full max-w-7xl px-5 pb-14 pt-36 md:px-8 md:pb-20">
+      <div className="relative mx-auto w-full max-w-7xl px-5 pb-14 pt-40 md:px-8 md:pb-20 md:pt-44">
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           className="eyebrow mb-6 flex items-center gap-4 text-bone/70"
         >
-          <span className="h-px w-10 bg-bronze" />
-          {site.zone.map((z) => t(`cities.${z}`, { defaultValue: z })).join(' · ')} · {t('hero.country')}
+          <span className="h-px w-10 shrink-0 bg-bronze" />
+          <span>
+            {site.zone.map((z) => t(`cities.${z}`, { defaultValue: z })).join(' · ')} · {t('hero.country')}
+          </span>
         </motion.p>
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.1 }}
-          className="font-display text-[3.4rem] leading-[0.95] tracking-tight text-bone sm:text-7xl lg:text-[7.5rem] rtl:leading-[1.25] rtl:tracking-normal"
+          className="font-display text-[3.2rem] leading-[0.95] tracking-tight text-bone sm:text-7xl lg:text-[6.5rem] rtl:leading-[1.25] rtl:tracking-normal"
         >
           {t('hero.line1')}
           <br />
@@ -48,7 +52,19 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.35 }}
           className="mt-10 flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between"
         >
-          <p className="max-w-md text-lg leading-relaxed text-bone/80">{t('hero.description')}</p>
+          <div className="max-w-xl">
+            <p className="text-lg leading-relaxed text-bone/80">{t('hero.description')}</p>
+            {points.length > 0 && (
+              <ul className="mt-6 space-y-3">
+                {points.map((p) => (
+                  <li key={p} className="flex gap-3 text-bone/90">
+                    <Check size={20} className="mt-0.5 shrink-0 text-bronze-light" />
+                    <span>{p}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
 
           <div className="flex flex-col gap-4 sm:flex-row">
             <a

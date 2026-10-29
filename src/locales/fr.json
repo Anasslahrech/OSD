@@ -13,23 +13,31 @@
     "closeMenu": "Fermer le menu"
   },
   "hero": {
-    "country": "Maroc",
-    "line1": "Nous construisons",
-    "line2": "des espaces",
-    "line3": "qui durent.",
-    "description": "Overall Style Designer construit, rénove et aménage appartements, villas, cabinets professionnels et autres locaux. Une seule équipe, un devis détaillé, un seul interlocuteur.",
-    "discover": "Découvrir nos projets",
-    "quote": "Demander un devis"
-  },
+  "country": "Maroc",
+  "line1": "Nous construisons",
+  "line2": "et rénovons des espaces",
+  "line3": "qui durent.",
+  "description": "Overall Style Designer construit, rénove et aménage appartements, villas, cabinets professionnels et autres locaux.",
+  "points": [
+    "Un interlocuteur unique, du premier rendez-vous à la remise des clés",
+    "Un budget et un planning clairs dès le départ",
+    "Des finitions soignées, du détail au résultat final",
+    "Un suivi régulier de votre chantier, même à distance"
+  ],
+  "discover": "Découvrir nos projets",
+  "quote": "Demander un devis"
+},
   "cities": {
-    "Kénitra": "Kénitra",
-    "Rabat": "Rabat",
-    "Salé": "Salé"
-  },
+  "Kénitra": "Kénitra",
+  "Rabat": "Rabat",
+  "Salé": "Salé",
+  "Tanger et régions": "Tanger et régions",
+  "Khemisset": "Khemisset"
+},
   "seo": {
-    "defaultTitle": "{{name}} | Construction et rénovation à Kénitra, Rabat et Salé",
-    "homeDescription": "Overall Style Designer construit, rénove et aménage appartements, villas, cabinets professionnels et locaux à Kénitra, Rabat et Salé. Projets avant/après et devis gratuit."
-  },
+  "defaultTitle": "{{name}} | Construction et rénovation à Rabat, Salé, Kénitra, Tanger et Khemisset",
+  "homeDescription": "Overall Style Designer construit, rénove et aménage appartements, villas, cabinets professionnels et locaux à Rabat, Salé, Kénitra, Tanger et Khemisset. Projets avant/après et devis gratuit."
+},
   "categories": {
     "Tous": "Tous",
     "Appartements": "Appartements",
@@ -80,64 +88,43 @@
     "alt": "Photo {{label}} travaux",
     "compare": "Comparer avant et après"
   },
-  "about": {
+    "about": {
     "eyebrow": "À propos",
-    "heading": "Une jeune entreprise, une équipe, une exigence.",
-    "p1": "{{name}} est une entreprise récente de construction et de rénovation. Nous intervenons à {{zone}} pour construire, rénover et aménager appartements, villas, cabinets professionnels et autres locaux.",
-    "p2": "Vous savez qui répond au téléphone, qui supervise le chantier et qui vous remet les clés.",
+    "badge": "d'expérience",
+    "heading": "Une équipe expérimentée, une exigence.",
+    "p1": "{{name}} est une entreprise de construction et de rénovation forte de +30 ans d'expérience. Nous intervenons à {{zone}} pour construire, rénover et aménager appartements, villas, cabinets professionnels et autres locaux.",
+    "p2": "Nous proposons une autre façon de construire et de rénover : plus claire, plus soignée, plus proche des attentes des clients.",
+    "mission": "Notre mission : accompagner chaque client dans la réalisation de son projet, avec une vision globale : l'architecture, la construction, les finitions et l'esthétique de l'espace.",
+    "targetsTitle": "Pour qui travaillons-nous ?",
     "targets": [
       "Particuliers : appartements, villas, maisons",
       "Professionnels : médecins, dentistes, avocats, cabinets",
       "Partenaires : architectes, décorateurs, agences immobilières, promoteurs"
     ],
     "stats": [
-      {
-        "label": "Villes d'intervention",
-        "suffix": ""
-      },
-      {
-        "label": "Pour recevoir votre devis",
-        "suffix": " h"
-      },
-      {
-        "label": "Interlocuteur unique",
-        "suffix": ""
-      }
+      { "label": "Ans d'expérience", "suffix": "+" },
+      { "label": "Villes d'intervention", "suffix": "" },
+      { "label": "Étapes, de l'écoute à la garantie", "suffix": "" }
     ],
+    "valuesTitle": "Nos valeurs",
     "values": [
-      {
-        "title": "Qualité",
-        "text": "Des matériaux sélectionnés et des artisans qualifiés, contrôle à chaque étape."
-      },
-      {
-        "title": "Délais respectés",
-        "text": "Un planning clair signé au départ, un suivi régulier du chantier."
-      },
-      {
-        "title": "Transparence",
-        "text": "Devis détaillé poste par poste, aucun coût caché."
-      }
+      { "title": "Rigueur", "text": "Des chantiers organisés, suivis et contrôlés." },
+      { "title": "Transparence", "text": "Des devis clairs, une communication honnête." },
+      { "title": "Esthétique", "text": "Le souci du détail, du choix des matériaux à la finition." },
+      { "title": "Respect des engagements", "text": "Des délais et des budgets annoncés pour être tenus." }
     ],
     "methodEyebrow": "Notre méthode",
-    "methodHeading": "Quatre étapes, du premier échange à la remise des clés.",
+    "methodHeading": "Cinq étapes, du premier échange à la garantie.",
     "method": [
-      {
-        "title": "Écoute et visite",
-        "text": "Nous nous déplaçons, écoutons votre projet et relevons les contraintes du lieu."
-      },
-      {
-        "title": "Devis détaillé",
-        "text": "Vous recevez un devis clair, poste par poste, sous 48 h."
-      },
-      {
-        "title": "Réalisation suivie",
-        "text": "Un chef de chantier dédié, un planning partagé et des photos d'avancement."
-      },
-      {
-        "title": "Livraison et suivi",
-        "text": "Réception avec vous, levée des réserves et assistance après livraison."
-      }
-    ]
+      { "title": "Écoute et visite", "text": "Nous nous déplaçons, écoutons votre projet et relevons les contraintes du lieu." },
+      { "title": "Devis et conception", "text": "Un devis clair, poste par poste, et une conception adaptée à votre projet." },
+      { "title": "Planification", "text": "Un planning précis, validé avec vous avant le début des travaux." },
+      { "title": "Réalisation et suivi", "text": "Un chantier organisé, suivi et contrôlé, avec des points réguliers." },
+      { "title": "Livraison et garantie", "text": "Réception avec vous, levée des réserves et garantie après livraison." }
+    ],
+    "abroadTitle": "Vous êtes à l'étranger ?",
+    "abroadText": "Vous construisez ou rénovez au Maroc depuis l'étranger ? Nous vous tenons informé tout au long du chantier : photos, vidéos et points réguliers par appel vidéo.",
+    "abroadItems": ["Photos", "Vidéos", "Points par appel vidéo"]
   },
   "testimonials": {
     "eyebrow": "Avis clients",
@@ -146,7 +133,7 @@
   "form": {
     "eyebrow": "Contact et devis",
     "heading": "Parlons de votre projet.",
-    "intro": "Décrivez vos travaux : vous recevez une réponse et un devis détaillé gratuit sous 48 h.",
+        "intro": "Décrivez-nous votre idée, nous vous répondons rapidement avec une proposition adaptée.",
     "address": "Kénitra, Maroc",
     "hours": "Lun – Sam · 8h30 – 18h30",
     "mapTitle": "Carte Google Maps : {{query}}",
@@ -157,19 +144,22 @@
     "phone": "Téléphone *",
     "email": "E-mail *",
     "city": "Ville du chantier *",
+        "openMap": "Ouvrir dans Google Maps",
     "cityPlaceholder": "Kénitra, Rabat, Salé…",
     "type": "Type de projet *",
     "select": "Sélectionner…",
     "types": [
-      "Construction de villa",
-      "Construction de maison",
-      "Rénovation d'appartement",
-      "Rénovation de villa ou maison",
-      "Aménagement de cabinet professionnel",
-      "Aménagement d'autres locaux",
-      "Finitions (peinture, carrelage…)",
-      "Autre"
-    ],
+  "Construction de villa",
+  "Construction de maison",
+  "Rénovation d'appartement",
+  "Rénovation de villa ou maison",
+  "Aménagement de cabinet professionnel",
+  "Aménagement d'autres locaux",
+  "Finitions (peinture, carrelage…)",
+  "Aménagement de façade",
+  "Produits d'isolation",
+  "Autre"
+],
     "budget": "Budget estimé (facultatif)",
     "budgetNone": "Non précisé",
     "budgets": [
@@ -337,34 +327,7 @@
           "Remise aux normes plomberie et électricité"
         ]
       },
-      "amenagement-cabinets": {
-        "title": "Aménagement de cabinets",
-        "text": "Cabinets médicaux, dentaires, juridiques et bureaux : circulation, acoustique, éclairage et finitions soignées.",
-        "intro": "Médecins, dentistes, avocats, architectes : votre local est votre outil de travail. Nous l'aménageons pour qu'il soit fonctionnel, accueillant et livré à la date prévue pour ne pas retarder votre ouverture.",
-        "steps": [
-          {
-            "title": "Cahier des besoins",
-            "text": "Salle d'attente, cabinet, stérilisation, archives : chaque usage est défini avec vous."
-          },
-          {
-            "title": "Plan et devis",
-            "text": "Implantation des pièces, réseaux (eau, électricité, données) et chiffrage détaillé."
-          },
-          {
-            "title": "Réalisation",
-            "text": "Cloisons, faux plafonds, électricité, plomberie, menuiserie sur mesure, revêtements."
-          },
-          {
-            "title": "Livraison clés en main",
-            "text": "Local prêt à équiper et à recevoir vos patients ou clients."
-          }
-        ],
-        "benefits": [
-          "Respect strict du calendrier d'ouverture",
-          "Confort acoustique et éclairage adaptés",
-          "Image professionnelle et soignée"
-        ]
-      },
+      
       "finitions": {
         "title": "Peinture, carrelage et revêtements",
         "text": "Zellige, marbre, carrelage grand format, enduits décoratifs et peinture haut de gamme.",
@@ -420,35 +383,8 @@
           "Essais avant livraison",
           "Intégration discrète dans la décoration"
         ]
-      },
-      "amenagement-interieur-exterieur": {
-        "title": "Aménagement intérieur et extérieur",
-        "text": "Cuisines, dressings, menuiserie sur mesure, terrasses, piscines et jardins.",
-        "intro": "Cuisine ouverte, dressing sur mesure, terrasse, piscine ou jardin : nous aménageons vos espaces de vie pour qu'ils soient beaux, pratiques et faciles à entretenir.",
-        "steps": [
-          {
-            "title": "Conception",
-            "text": "Plans, ambiances et choix des matériaux avec vous."
-          },
-          {
-            "title": "Fabrication et préparation",
-            "text": "Menuiserie sur mesure et préparation des supports intérieurs et extérieurs."
-          },
-          {
-            "title": "Installation",
-            "text": "Pose, raccordements et aménagements extérieurs."
-          },
-          {
-            "title": "Réception",
-            "text": "Contrôle des finitions et conseils d'entretien."
-          }
-        ],
-        "benefits": [
-          "Menuiserie sur mesure",
-          "Cohérence entre intérieur et extérieur",
-          "Conseils d'entretien inclus"
-        ]
       }
+      
     },
     "projects": {
       "villa-mehdia": {

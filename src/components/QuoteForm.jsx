@@ -113,15 +113,23 @@ export default function QuoteForm() {
             </li>
           </ul>
 
-          <div className="mt-10 aspect-[4/3] overflow-hidden rounded-2xl bg-sand">
+                    <div className="mt-10 aspect-[4/3] overflow-hidden rounded-2xl bg-sand">
             <iframe
-              title={t('form.mapTitle', { query: site.mapQuery })}
-              src={`https://www.google.com/maps?q=${encodeURIComponent(site.mapQuery)}&output=embed`}
+              title={t('form.mapTitle', { query: site.address })}
+              src={`https://www.google.com/maps?q=${encodeURIComponent(site.mapQuery)}&z=17&hl=fr&output=embed`}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="h-full w-full border-0"
             />
           </div>
+          <a
+            href={site.mapLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-accent hover:underline"
+          >
+            <MapPin size={16} /> {t('form.openMap')}
+          </a>
         </div>
 
         <form

@@ -1,11 +1,36 @@
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { ArrowUpRight, Building2, Hammer, Stethoscope, PaintRoller, Wrench, Trees } from 'lucide-react'
+import { ArrowUpRight, Building2, Hammer, Stethoscope, PaintRoller, Wrench, Trees, Layers, Package } from 'lucide-react'
 import { services } from '../data/site'
 import { tData } from '../lib/i18nHelpers'
 
-export const serviceIcons = { Building2, Hammer, Stethoscope, PaintRoller, Wrench, Trees }
+export const serviceIcons = { Building2, Hammer, Stethoscope, PaintRoller, Wrench, Trees, Layers, Package }
+
+// Logo du partenaire (ex. SMH Le Designeur).
+// Déposer le fichier dans public/images/smh-le-designeur.png (le nom s'affiche tant qu'il est absent).
+export function Partner({ partner }) {
+  const [failed, setFailed] = useState(false)
+  if (!partner) return null
+  return (
+    <div className="mt-5 flex items-center gap-3">
+      <span className="text-xs uppercase tracking-wider opacity-70">{partner.label}</span>
+      <span className="inline-flex h-12 items-center rounded-lg bg-white px-3 shadow-sm">
+        {failed ? (
+          <span className="font-display text-lg font-semibold text-charcoal">{partner.name}</span>
+        ) : (
+          <img
+            src={partner.logo}
+            alt={partner.name}
+            className="h-9 w-auto object-contain"
+            onError={() => setFailed(true)}
+          />
+        )}
+      </span>
+    </div>
+  )
+}
 
 export default function Services() {
   const { t } = useTranslation()
@@ -41,7 +66,8 @@ export default function Services() {
                     {tr.title}
                   </h3>
                   <p className="leading-relaxed text-charcoal/70 transition group-hover:text-bone/70">{tr.text}</p>
-                  <span className="eyebrow mt-6 inline-flex items-center gap-2 pt-2 text-accent transition group-hover:text-bronze-light">
+                  <Partner partner={s.partner} />
+                  <span className="eyebrow mt-auto inline-flex items-center gap-2 pt-6 text-accent transition group-hover:text-bronze-light">
                     {t('servicesSection.more')} <ArrowUpRight size={14} className="rtl:-scale-x-100" />
                   </span>
                 </Link>

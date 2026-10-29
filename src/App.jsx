@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -12,8 +13,13 @@ import BlogPost from './pages/BlogPost'
 import Legal from './pages/Legal'
 import Privacy from './pages/Privacy'
 import NotFound from './pages/NotFound'
+import { initConsent } from './lib/consent'
 
 export default function App() {
+  useEffect(() => {
+    initConsent()
+  }, [])
+
   return (
     <>
       <ScrollManager />
