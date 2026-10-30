@@ -8,22 +8,31 @@ import { tData } from '../lib/i18nHelpers'
 
 export const serviceIcons = { Building2, Hammer, Stethoscope, PaintRoller, Wrench, Trees, Layers, Package }
 
-// Logo du partenaire (ex. SMH Le Designeur).
-// Déposer le fichier dans public/images/smh-le-designeur.png (le nom s'affiche tant qu'il est absent).
+const DEFAULT_PARTNER_LOGO = '/images/smh-le-designeur.png'
+
+// Fichier attendu : public/images/smh-le-designeur.png
 export function Partner({ partner }) {
   const [failed, setFailed] = useState(false)
   if (!partner) return null
+  const logo = partner.logo || DEFAULT_PARTNER_LOGO
+
   return (
-    <div className="mt-5 flex items-center gap-3">
-      <span className="text-xs uppercase tracking-wider opacity-70">{partner.label}</span>
-      <span className="inline-flex h-12 items-center rounded-lg bg-white px-3 shadow-sm">
+    <div className="mt-5 flex flex-wrap items-center gap-3">
+      {partner.label && (
+        <span className="text-xs uppercase tracking-wider opacity-70">{partner.label}</span>
+      )}
+      <span
+        dir="ltr"
+        className="inline-flex h-14 items-center justify-center overflow-hidden rounded-lg bg-white px-4 shadow-sm"
+      >
         {failed ? (
           <span className="font-display text-lg font-semibold text-charcoal">{partner.name}</span>
         ) : (
           <img
-            src={partner.logo}
+            src={logo}
             alt={partner.name}
-            className="h-9 w-auto object-contain"
+            loading="lazy"
+            className="h-full w-auto max-w-[200px] scale-125 object-contain"
             onError={() => setFailed(true)}
           />
         )}
@@ -48,6 +57,7 @@ export default function Services() {
           {services.map((s, i) => {
             const Icon = serviceIcons[s.icon]
             const tr = tData(t, `data.services.${s.slug}`, s)
+            const partner = s.partner ? { ...s.partner, ...(tr.partner || {}) } : null
             return (
               <motion.div
                 key={s.slug}
@@ -66,7 +76,7 @@ export default function Services() {
                     {tr.title}
                   </h3>
                   <p className="leading-relaxed text-charcoal/70 transition group-hover:text-bone/70">{tr.text}</p>
-                  <Partner partner={tr.partner} />
+                  <Partner partner={partner} />
                   <span className="eyebrow mt-auto inline-flex items-center gap-2 pt-6 text-accent transition group-hover:text-bronze-light">
                     {t('servicesSection.more')} <ArrowUpRight size={14} className="rtl:-scale-x-100" />
                   </span>

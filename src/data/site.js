@@ -155,19 +155,19 @@ export const services = [
     benefits: ['Menuiserie sur mesure', 'Travaux en placoplâtre (biatris)', 'Cohérence entre intérieur et extérieur', 'Conseils d\'entretien inclus'],
     category: 'Rénovation',
   },
-  {
+    {
     slug: 'isolation',
     icon: 'Package',
     title: 'Vente de produits d\'isolation',
-    text: 'Polystyrène, polyuréthane et polycoffre, en collaboration avec SMH Le Designeur.',
+    text: 'Polystyrène, polyuréthane et polycoffre.',
     intro:
-      "Nous proposons à la vente des produits d'isolation : polystyrène, polyuréthane et polycoffre, en collaboration avec SMH Le Designeur.",
+      "Nous proposons à la vente des produits d'isolation : polystyrène, polyuréthane et polycoffre.",
     steps: [
       { title: 'Choix du produit', text: 'Conseil sur le type d\'isolant adapté à votre projet : polystyrène, polyuréthane ou polycoffre.' },
       { title: 'Devis', text: 'Quantités et prix détaillés selon vos besoins.' },
       { title: 'Livraison', text: 'Commande préparée et livrée selon le calendrier de votre chantier.' },
     ],
-    benefits: ['Polystyrène, polyuréthane, polycoffre', 'Conseil pour choisir le bon isolant', 'En collaboration avec SMH Le Designeur'],
+    benefits: ['Polystyrène, polyuréthane, polycoffre', 'Conseil pour choisir le bon isolant', 'Livraison selon votre calendrier de chantier'],
     category: 'Isolation',
     partner: {
       label: 'En collaboration avec',

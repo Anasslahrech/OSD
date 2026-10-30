@@ -14,6 +14,7 @@ export default function ServicePage() {
   const base = services.find((s) => s.slug === slug)
   if (!base) return <Navigate to="/404" replace />
   const service = tData(t, `data.services.${base.slug}`, base)
+  const partner = base.partner ? { ...base.partner, ...(service.partner || {}) } : null
 
   const Icon = serviceIcons[base.icon]
   const related = projects
@@ -36,7 +37,7 @@ export default function ServicePage() {
           <div className="lg:col-span-3">
             <Icon className="mb-6 text-bronze" size={38} strokeWidth={1.4} />
             <p className="text-xl leading-relaxed text-charcoal/80">{service.intro}</p>
-            <Partner partner={service.partner} />
+            <Partner partner={partner} />
 
             <h2 className="mb-6 mt-14 font-display text-4xl">{t('servicePage.how')}</h2>
             <ol className="space-y-6">
