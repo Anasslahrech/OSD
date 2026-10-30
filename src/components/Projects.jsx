@@ -58,9 +58,9 @@ export default function Projects() {
                 >
                   <Link to={`/realisations/${p.id}`} className="group block text-start">
                     <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-charcoal">
-                      <ThumbImage src={p.after} />
+                      <ThumbImage src={p.gallery?.[0] || p.after} />
                       <span className="eyebrow absolute bottom-4 start-4 rounded-full bg-charcoal/80 px-4 py-2 text-bone opacity-0 transition group-hover:opacity-100">
-                        {t('projectsSection.viewBA')}
+                        {t('projectsSection.viewPhotos')}
                       </span>
                     </div>
                     <div className="mt-4 flex items-center justify-between text-sm text-charcoal/60">
@@ -85,7 +85,7 @@ export default function Projects() {
 function ThumbImage({ src }) {
   const { t } = useTranslation()
   const [failed, setFailed] = useState(false)
-  if (failed) {
+  if (failed || !src) {
     return (
       <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-[#3d5584] to-[#24375f]">
         <span className="eyebrow text-white/50">{t('projectsSection.photoToAdd')}</span>

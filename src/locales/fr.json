@@ -45,6 +45,9 @@
     "Maisons": "Maisons",
     "Cabinets": "Cabinets",
     "Rénovation intérieure": "Rénovation intérieure",
+    "Cuisines": "Cuisines",
+"Menuiserie": "Menuiserie",
+"Faux plafond": "Faux plafond",
     "Rénovation": "Rénovation",
     "Construction": "Construction"
   },
@@ -60,14 +63,15 @@
     "benefits": "Les avantages",
     "quote": "Demander un devis",
     "projects": "Nos réalisations",
-    "seeBA": "Voir avant / après →"
+    "seeBA": "Voir les photos →"
   },
   "projectsSection": {
     "eyebrow": "Nos réalisations",
-    "heading": "Avant, après : les chantiers parlent d'eux-mêmes.",
+    "heading": "Des projets qui parlent d’eux-mêmes.",
     "filter": "Filtrer les projets",
     "empty": "Aucun projet dans cette catégorie pour le moment.",
     "viewBA": "Voir avant / après",
+    "viewPhotos": "Voir les photos",
     "photoToAdd": "Photo à ajouter"
   },
   "projectPage": {

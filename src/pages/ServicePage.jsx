@@ -36,7 +36,7 @@ export default function ServicePage() {
           <div className="lg:col-span-3">
             <Icon className="mb-6 text-bronze" size={38} strokeWidth={1.4} />
             <p className="text-xl leading-relaxed text-charcoal/80">{service.intro}</p>
-            <Partner partner={base.partner} />
+            <Partner partner={service.partner} />
 
             <h2 className="mb-6 mt-14 font-display text-4xl">{t('servicePage.how')}</h2>
             <ol className="space-y-6">

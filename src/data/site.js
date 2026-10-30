@@ -78,7 +78,7 @@ export const services = [
   {
     slug: 'amenagement-cabinets',
     icon: 'Stethoscope',
-    title: 'Aménagement des espaces plateau',
+    title: 'Aménagement des espaces plateaux',
     text: 'Cabinets médicaux, laboratoires d\'analyses, espaces commerciaux : circulation, acoustique, éclairage et finitions soignées.',
     intro:
       "Cabinet médical, laboratoire d'analyses, espace commercial : votre local est votre outil de travail. Nous l'aménageons pour qu'il soit fonctionnel, accueillant et livré à la date prévue pour ne pas retarder votre ouverture.",

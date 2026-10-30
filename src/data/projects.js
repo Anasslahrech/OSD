@@ -1,81 +1,52 @@
-// Pour ajouter un projet : copier une entrée, déposer les photos dans /public/projects
-// puis renseigner les chemins "before" et "after".
-// Facultatif : "video" (ex. '/projects/villa-mehdia.mp4') pour afficher une vidéo du chantier.
-// Les projets ci-dessous sont des EXEMPLES à remplacer par les vraies réalisations d'OSD.
-export const categories = ['Tous', 'Appartements', 'Villas', 'Maisons', 'Cabinets', 'Rénovation intérieure']
+// Pour ajouter un projet : déposer les photos dans /public/projects puis renseigner "gallery".
+// Facultatif : "before" / "after" pour afficher le curseur avant / après, "video" pour une vidéo.
+export const categories = ['Tous', 'Cabinets', 'Cuisines', 'Menuiserie', 'Faux plafond']
+
+const n = (prefix, count) => Array.from({ length: count }, (_, i) => `/projects/${prefix}-${i + 1}.jpg`)
 
 export const projects = [
   {
-    id: 'villa-mehdia',
-    title: 'Villa Mehdia',
-    category: 'Villas',
-    service: 'Construction clé en main',
-    city: 'Kénitra',
-    year: 2025,
-    description:
-      "Construction complète d'une villa : gros œuvre, second œuvre et finitions, livrée avec un seul interlocuteur.",
-    before: '/projects/villa-mehdia-avant.jpg',
-    after: '/projects/villa-mehdia-apres.jpg',
-    video: '',
-  },
-  {
-    id: 'maison-souissi',
-    title: 'Maison Souissi',
-    category: 'Maisons',
-    service: 'Rénovation complète',
-    city: 'Rabat',
-    year: 2025,
-    description: 'Rénovation complète : distribution des pièces, électricité, plomberie et revêtements.',
-    before: '/projects/maison-souissi-avant.jpg',
-    after: '/projects/maison-souissi-apres.jpg',
-    video: '',
-  },
-  {
-    id: 'cabinet-agdal',
-    title: 'Cabinet Dentaire Agdal',
+    id: 'cabinet',
+    title: 'Aménagement de cabinet',
     category: 'Cabinets',
-    service: 'Aménagement de cabinet',
+    service: 'Aménagement des espaces plateaux',
     city: 'Rabat',
     year: 2025,
-    description: "Aménagement d'un cabinet dentaire : salle d'attente, salles de soins, réseaux et finitions.",
-    before: '/projects/cabinet-agdal-avant.jpg',
-    after: '/projects/cabinet-agdal-apres.jpg',
+    description: "Aménagement complet d'un cabinet : cloisons, faux plafonds, menuiserie sur mesure et finitions soignées.",
+    gallery: n('cabinet', 7),
     video: '',
   },
   {
-    id: 'appartement-sale',
-    title: 'Appartement Hay Salam',
-    category: 'Appartements',
-    service: 'Rénovation complète',
-    city: 'Salé',
-    year: 2025,
-    description: "Rénovation d'un appartement : ouverture de la cuisine, nouveau carrelage, salle de bain et peinture.",
-    before: '/projects/appartement-sale-avant.jpg',
-    after: '/projects/appartement-sale-apres.jpg',
-    video: '',
-  },
-  {
-    id: 'salon-cuisine-kenitra',
-    title: 'Salon et cuisine Kénitra',
-    category: 'Rénovation intérieure',
+    id: 'cuisine',
+    title: 'Aménagement de cuisine',
+    category: 'Cuisines',
     service: 'Aménagement intérieur',
     city: 'Kénitra',
     year: 2025,
-    description: "Réaménagement d'un salon et d'une cuisine ouverte avec menuiserie sur mesure.",
-    before: '/projects/salon-kenitra-avant.jpg',
-    after: '/projects/salon-kenitra-apres.jpg',
+    description: 'Cuisine aménagée sur mesure : agencement, rangements et finitions.',
+    gallery: n('cuisine', 3),
     video: '',
   },
   {
-    id: 'villa-harhoura',
-    title: 'Villa Harhoura',
-    category: 'Villas',
-    service: 'Rénovation et extension',
+    id: 'menuiserie',
+    title: 'Menuiserie sur mesure',
+    category: 'Menuiserie',
+    service: 'Menuiserie',
+    city: 'Kénitra',
+    year: 2025,
+    description: 'Menuiserie sur mesure : portes, placards et agencements réalisés dans nos ateliers.',
+    gallery: n('menuiserie', 3),
+    video: '',
+  },
+  {
+    id: 'faux-plafond',
+    title: 'Faux plafonds',
+    category: 'Faux plafond',
+    service: 'Faux plafond',
     city: 'Rabat',
     year: 2025,
-    description: "Rénovation d'une villa existante et extension de l'étage avec terrasse.",
-    before: '/projects/villa-harhoura-avant.jpg',
-    after: '/projects/villa-harhoura-apres.jpg',
+    description: 'Faux plafonds décoratifs avec éclairage intégré, pour des intérieurs modernes.',
+    gallery: n('faux-plafond', 6),
     video: '',
   },
 ]

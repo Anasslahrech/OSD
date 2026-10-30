@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { getConsent, setConsent } from '../lib/consent'
 
 export default function CookieBanner() {
   const { t } = useTranslation()
+  const navigate = useNavigate()
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
@@ -19,6 +20,8 @@ export default function CookieBanner() {
   const choose = (value) => {
     setConsent(value)
     setVisible(false)
+    navigate('/')
+    window.scrollTo(0, 0)
   }
 
   return (

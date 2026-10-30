@@ -66,7 +66,7 @@ export default function Services() {
                     {tr.title}
                   </h3>
                   <p className="leading-relaxed text-charcoal/70 transition group-hover:text-bone/70">{tr.text}</p>
-                  <Partner partner={s.partner} />
+                  <Partner partner={tr.partner} />
                   <span className="eyebrow mt-auto inline-flex items-center gap-2 pt-6 text-accent transition group-hover:text-bronze-light">
                     {t('servicesSection.more')} <ArrowUpRight size={14} className="rtl:-scale-x-100" />
                   </span>

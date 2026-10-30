@@ -19,7 +19,7 @@
     "line3": "that last.",
     "description": "Overall Style Designer builds, renovates and fits out apartments, villas, professional offices and other premises. One team, one detailed quote, one point of contact.",
     "discover": "Discover our projects",
-        "points": [
+    "points": [
       "A single point of contact, from the first meeting to the handover of the keys",
       "A clear budget and schedule from the start",
       "Careful finishing, from the details to the final result",
@@ -27,14 +27,14 @@
     ],
     "quote": "Request a quote"
   },
-   "cities": {
+  "cities": {
     "Kénitra": "Kenitra",
     "Rabat": "Rabat",
     "Salé": "Salé",
     "Tanger et régions": "Tangier and surrounding areas",
     "Khemisset": "Khemisset"
   },
-    "seo": {
+  "seo": {
     "defaultTitle": "{{name}} | Construction and renovation in Kenitra, Rabat, Salé, Khemisset and Tangier",
     "homeDescription": "Overall Style Designer builds, renovates and fits out apartments, villas, professional offices and premises in Kenitra, Rabat, Salé, Khemisset and Tangier. Before/after projects and free quote."
   },
@@ -45,6 +45,9 @@
     "Maisons": "Houses",
     "Cabinets": "Offices & clinics",
     "Rénovation intérieure": "Interior renovation",
+    "Cuisines": "Kitchens",
+"Menuiserie": "Joinery",
+"Faux plafond": "False ceilings",
     "Rénovation": "Renovation",
     "Construction": "Construction"
   },
@@ -60,14 +63,15 @@
     "benefits": "Benefits",
     "quote": "Request a quote",
     "projects": "Our projects",
-    "seeBA": "See before / after →"
+    "seeBA": "View photos →"
   },
   "projectsSection": {
     "eyebrow": "Our projects",
-    "heading": "Before, after: the work speaks for itself.",
+    "heading": "Projects that speak for themselves.",
     "filter": "Filter projects",
     "empty": "No projects in this category yet.",
     "viewBA": "See before / after",
+    "viewPhotos": "View photos",
     "photoToAdd": "Photo to be added"
   },
   "projectPage": {
@@ -88,7 +92,7 @@
     "alt": "{{label}} photo of the works",
     "compare": "Compare before and after"
   },
-    "about": {
+  "about": {
     "eyebrow": "About",
     "badge": "of experience",
     "heading": "An experienced team, one standard.",
@@ -133,7 +137,7 @@
   "form": {
     "eyebrow": "Contact and quote",
     "heading": "Let's talk about your project.",
-        "intro": "Tell us about your idea and we will reply quickly with a tailored proposal.",
+    "intro": "Tell us about your idea and we will reply quickly with a tailored proposal.",
     "address": "Kenitra, Morocco",
     "hours": "Mon – Sat · 8:30 am – 6:30 pm",
     "mapTitle": "Google Maps: {{query}}",
@@ -144,7 +148,7 @@
     "phone": "Phone *",
     "email": "E-mail *",
     "city": "Site city *",
-        "openMap": "Open in Google Maps",
+    "openMap": "Open in Google Maps",
     "cityPlaceholder": "Kenitra, Rabat, Salé…",
     "type": "Project type *",
     "select": "Select…",
@@ -156,6 +160,8 @@
       "Professional office fit-out",
       "Other premises fit-out",
       "Finishing (painting, tiling…)",
+      "Façade fit-out",
+      "Insulation products",
       "Other"
     ],
     "budget": "Estimated budget (optional)",
@@ -436,40 +442,66 @@
           "Consistency between interior and exterior",
           "Maintenance advice included"
         ]
+      },
+      "amenagement-facades": {
+        "title": "Façade fit-out",
+        "text": "Alucobond cladding, Trespa profiles, aluminium, siding and other solutions for a modern, durable façade.",
+        "intro": "A façade makes the first impression of your building. We install Alucobond and Trespa cladding, aluminium, siding and other solutions to modernise and protect your façades.",
+        "steps": [
+          { "title": "Survey and choice of materials", "text": "Site visit, measurements and choice of cladding and colours." },
+          { "title": "Plan and quote", "text": "Detailed pricing and panel layout of the façade before work starts." },
+          { "title": "Cladding installation", "text": "Framework, fixing and installation of Alucobond, Trespa, aluminium or siding." },
+          { "title": "Final check", "text": "Inspection of alignments, joints and finishes before handover." }
+        ],
+        "benefits": [
+          "Alucobond, Trespa, aluminium, siding",
+          "Modern and resistant façade",
+          "Clean finishes and precise alignments"
+        ]
+      },
+      "isolation": {
+        "title": "Sale of insulation products",
+        "text": "Polystyrene, polyurethane and polycoffre, in collaboration with SMH Le Designeur.",
+        "intro": "We sell insulation products: polystyrene, polyurethane and polycoffre, in collaboration with SMH Le Designeur.",
+        "steps": [
+          { "title": "Choice of product", "text": "Advice on the type of insulation suited to your project: polystyrene, polyurethane or polycoffre." },
+          { "title": "Quote", "text": "Detailed quantities and prices according to your needs." },
+          { "title": "Delivery", "text": "Order prepared and delivered according to your site schedule." }
+        ],
+        "benefits": [
+          "Polystyrene, polyurethane, polycoffre",
+          "Advice to choose the right insulation",
+          "In collaboration with SMH Le Designeur"
+        ],
+        "partner": {
+          "label": "In collaboration with",
+          "name": "SMH Le Designeur",
+          "logo": "/images/smh-le-designeur.png"
+        }
       }
     },
     "projects": {
-      "villa-mehdia": {
-        "title": "Villa Mehdia",
-        "service": "Turnkey construction",
-        "description": "Full construction of a villa: structural work, finishing work and final touches, delivered with a single point of contact."
-      },
-      "maison-souissi": {
-        "title": "Souissi House",
-        "service": "Full renovation",
-        "description": "Full renovation: room layout, electrics, plumbing and coverings."
-      },
-      "cabinet-agdal": {
-        "title": "Agdal Dental Clinic",
-        "service": "Clinic fit-out",
-        "description": "Fit-out of a dental clinic: waiting room, treatment rooms, utilities and finishing."
-      },
-      "appartement-sale": {
-        "title": "Hay Salam Apartment",
-        "service": "Full renovation",
-        "description": "Apartment renovation: opened-up kitchen, new tiling, bathroom and painting."
-      },
-      "salon-cuisine-kenitra": {
-        "title": "Living room and kitchen, Kenitra",
-        "service": "Interior fit-out",
-        "description": "Redesign of a living room and open kitchen with bespoke joinery."
-      },
-      "villa-harhoura": {
-        "title": "Harhoura Villa",
-        "service": "Renovation and extension",
-        "description": "Renovation of an existing villa and upper-floor extension with a terrace."
-      }
-    },
+  "cabinet": {
+    "title": "Clinic fit-out",
+    "service": "Open-plan and office fit-out",
+    "description": "Complete clinic fit-out: partitions, false ceilings, custom joinery and careful finishes."
+  },
+  "cuisine": {
+    "title": "Kitchen fit-out",
+    "service": "Interior fit-out",
+    "description": "Custom-fitted kitchen: layout, storage and finishes."
+  },
+  "menuiserie": {
+    "title": "Custom joinery",
+    "service": "Joinery",
+    "description": "Custom joinery: doors, wardrobes and fittings made in our workshops."
+  },
+  "faux-plafond": {
+    "title": "False ceilings",
+    "service": "False ceilings",
+    "description": "Decorative false ceilings with built-in lighting for modern interiors."
+  }
+},
     "posts": {
       "renover-un-appartement-par-ou-commencer": {
         "title": "Renovating an apartment: where to start?",

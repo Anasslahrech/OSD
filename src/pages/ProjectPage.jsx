@@ -2,7 +2,6 @@ import { Link, Navigate, useParams } from 'react-router-dom'
 import { ArrowLeft, MapPin } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import Seo from '../components/Seo'
-import BeforeAfter from '../components/BeforeAfter'
 import PageShell from './PageShell'
 import { projects } from '../data/projects'
 import { catLabel, cityLabel, tData } from '../lib/i18nHelpers'
@@ -31,8 +30,17 @@ export default function ProjectPage() {
 
         <div className="grid gap-12 lg:grid-cols-5">
           <div className="lg:col-span-3">
-            <BeforeAfter before={base.before} after={base.after} />
-            <p className="mt-3 text-sm text-charcoal/60">{t('projectPage.slide')}</p>
+            <div className="columns-2 gap-3 space-y-3">
+              {(base.gallery || []).map((src, i) => (
+                <img
+                  key={src}
+                  src={src}
+                  alt={`${project.title} ${i + 1}`}
+                  loading={i < 2 ? 'eager' : 'lazy'}
+                  className="w-full rounded-xl object-cover"
+                />
+              ))}
+            </div>
 
             {base.video && (
               <video

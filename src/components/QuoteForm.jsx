@@ -22,7 +22,8 @@ const field =
   'w-full rounded-lg border border-charcoal/20 bg-white px-4 py-3.5 text-charcoal outline-none transition focus:border-bronze focus:ring-2 focus:ring-bronze/20'
 
 export default function QuoteForm() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+  const mapLang = (i18n.resolvedLanguage || i18n.language || 'fr').slice(0, 2)
   const typeLabels = tList(t, 'form.types', projectTypes)
   const budgetLabels = tList(t, 'form.budgets', BUDGETS)
   const formRef = useRef(null)
@@ -113,10 +114,11 @@ export default function QuoteForm() {
             </li>
           </ul>
 
-                    <div className="mt-10 aspect-[4/3] overflow-hidden rounded-2xl bg-sand">
+          <div className="mt-10 aspect-[4/3] overflow-hidden rounded-2xl bg-sand">
             <iframe
+              key={mapLang}
               title={t('form.mapTitle', { query: site.address })}
-              src={`https://www.google.com/maps?q=${encodeURIComponent(site.mapQuery)}&z=17&hl=fr&output=embed`}
+              src={`https://www.google.com/maps?q=${encodeURIComponent(site.mapQuery)}&z=17&hl=${mapLang}&output=embed`}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="h-full w-full border-0"
