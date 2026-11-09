@@ -31,6 +31,7 @@ export default function QuoteForm() {
   const [file, setFile] = useState(null)
   const [status, setStatus] = useState('idle') // idle | sending | sent | error
   const [errors, setErrors] = useState({})
+  const [showMap, setShowMap] = useState(false) // la carte Google ne se charge qu'après un clic
 
   const set = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }))
 
@@ -115,14 +116,28 @@ export default function QuoteForm() {
           </ul>
 
           <div className="mt-10 aspect-[4/3] overflow-hidden rounded-2xl bg-sand">
-            <iframe
-              key={mapLang}
-              title={t('form.mapTitle', { query: site.address })}
-              src={`https://www.google.com/maps?q=${encodeURIComponent(site.mapQuery)}&z=17&hl=${mapLang}&output=embed`}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="h-full w-full border-0"
-            />
+            {showMap ? (
+              <iframe
+                key={mapLang}
+                title={t('form.mapTitle', { query: site.address })}
+                src={`https://www.google.com/maps?q=${encodeURIComponent(site.mapQuery)}&z=17&hl=${mapLang}&output=embed`}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="h-full w-full border-0"
+              />
+            ) : (
+              <div className="flex h-full flex-col items-center justify-center gap-3 p-6 text-center">
+                <MapPin className="text-accent" size={32} strokeWidth={1.4} />
+                <button
+                  type="button"
+                  onClick={() => setShowMap(true)}
+                  className="eyebrow rounded-full bg-charcoal px-6 py-3 text-bone transition hover:bg-bronze"
+                >
+                  {t('form.mapShow')}
+                </button>
+                <p className="max-w-xs text-sm text-charcoal/75">{t('form.mapNote')}</p>
+              </div>
+            )}
           </div>
           <a
             href={site.mapLink}
@@ -141,7 +156,7 @@ export default function QuoteForm() {
           className="relative rounded-2xl bg-sand/60 p-6 md:p-10 lg:col-span-3"
         >
           {status === 'sent' ? (
-            <div className="flex flex-col items-center py-16 text-center">
+            <div role="status" className="flex flex-col items-center py-16 text-center">
               <CheckCircle2 className="mb-5 text-accent" size={56} strokeWidth={1.3} />
               <h3 className="mb-3 font-display text-4xl">{t('form.sentTitle')}</h3>
               <p className="max-w-sm text-charcoal/70">{t('form.sentText')}</p>
@@ -236,7 +251,7 @@ export default function QuoteForm() {
                     {t('form.consentAfter')}
                   </span>
                 </label>
-                {errors.consent && <span className="mt-1.5 block text-sm text-red-700">{t(errors.consent)}</span>}
+                {errors.consent && <span role="alert" className="mt-1.5 block text-sm text-red-700">{t(errors.consent)}</span>}
               </div>
 
               {status === 'error' && (
@@ -253,6 +268,7 @@ export default function QuoteForm() {
                 {status === 'sending' && <Loader2 className="animate-spin" size={16} />}
                 {t('form.submit')}
               </button>
+              <p className="mt-4 text-sm text-charcoal/75">{t('form.free')}</p>
             </>
           )}
         </form>
@@ -268,7 +284,7 @@ function Field({ label, error, plain, children }) {
     <Wrapper className="block">
       <span className="mb-2 block text-sm font-medium text-charcoal/80">{label}</span>
       {children}
-      {error && <span className="mt-1.5 block text-sm text-red-700">{t(error)}</span>}
+      {error && <span role="alert" className="mt-1.5 block text-sm text-red-700">{t(error)}</span>}
     </Wrapper>
   )
 }

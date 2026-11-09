@@ -11,15 +11,15 @@ export const site = {
   whatsapp: '212607022022', // sans le +
   email: 'overalstyle.inf@gmail.com',
   address: 'Kénitra, Maroc',
-  hours: 'Lun – Sam · 8h30 – 18h30',
+  hours: 'Lun – Ven · 9h – 17h | Sam · 9h – 14h30',
   // Requête utilisée par la carte Google Maps (remplacer par l'adresse exacte du bureau)
-    mapQuery: '34.26287078857422,-6.627573490142822',
+  mapQuery: '34.26287078857422,-6.627573490142822',
   mapLink: 'https://maps.google.com/maps?q=34.26287078857422%2C-6.627573490142822&z=17&hl=fr',
-   social: {
+  social: {
     instagram: 'https://www.instagram.com/overall_style_designer',
-    facebook: '#',
+    facebook: 'https://web.facebook.com/profile.php?id=61596007179066',
     tiktok: '#',
-    linkedin: '#',
+    linkedin: 'https://www.linkedin.com/in/overall-style-designer-660993447',
   },
   // Chiffres neutres pour une entreprise récente (à remplacer par de vrais chiffres au fil des chantiers)
   stats: [
@@ -155,7 +155,7 @@ export const services = [
     benefits: ['Menuiserie sur mesure', 'Travaux en placoplâtre (biatris)', 'Cohérence entre intérieur et extérieur', 'Conseils d\'entretien inclus'],
     category: 'Rénovation',
   },
-    {
+  {
     slug: 'isolation',
     icon: 'Package',
     title: 'Vente de produits d\'isolation',

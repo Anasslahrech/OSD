@@ -1,5 +1,5 @@
 import { Link, Navigate, useParams } from 'react-router-dom'
-import { ArrowLeft, MapPin } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import Seo from '../components/Seo'
 import PageShell from './PageShell'
@@ -14,6 +14,8 @@ export default function ProjectPage() {
   const project = tData(t, `data.projects.${base.id}`, base)
   const city = cityLabel(t, base.city)
 
+  // Compatible avec l'ancien champ "video" (texte) et le nouveau "videos" (liste).
+  const videos = [...(base.videos || []), ...(base.video ? [{ src: base.video }] : [])]
   const others = projects.filter((p) => p.id !== base.id).slice(0, 3)
 
   return (
@@ -42,23 +44,28 @@ export default function ProjectPage() {
               ))}
             </div>
 
-            {base.video && (
-              <video
-                src={base.video}
-                controls
-                preload="metadata"
-                className="mt-8 aspect-video w-full rounded-xl bg-charcoal"
-              >
-                {t('projectPage.video')}
-              </video>
+            {videos.length > 0 && (
+              <div className="mt-8 grid gap-4 sm:grid-cols-2">
+                {videos.map((v) => (
+                  <video
+                    key={v.src}
+                    src={v.src}
+                    poster={v.poster}
+                    controls
+                    playsInline
+                    preload="metadata"
+                    className="aspect-[4/5] w-full rounded-xl bg-charcoal object-contain"
+                  >
+                    {t('projectPage.video')}
+                  </video>
+                ))}
+              </div>
             )}
           </div>
 
           <aside className="lg:col-span-2">
             <dl className="space-y-4 border-t border-charcoal/15 pt-6">
               <Row label={t('projectPage.service')} value={project.service} />
-              <Row label={t('projectPage.city')} value={<span className="inline-flex items-center gap-1.5"><MapPin size={14} />{city}</span>} />
-              <Row label={t('projectPage.year')} value={base.year} />
             </dl>
             <p className="mt-8 text-lg leading-relaxed text-charcoal/75">{project.description}</p>
             <Link
@@ -81,7 +88,7 @@ export default function ProjectPage() {
                   to={`/realisations/${other.id}`}
                   className="rounded-xl border border-charcoal/10 bg-white p-6 transition hover:border-bronze"
                 >
-                  <p className="text-sm text-charcoal/60">{p.service} · {cityLabel(t, other.city)}</p>
+                  <p className="text-sm text-charcoal/60">{p.service}</p>
                   <h3 className="mt-1 font-display text-3xl">{p.title}</h3>
                 </Link>
               )

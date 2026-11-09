@@ -53,6 +53,27 @@ section[id] {
   color: white;
 }
 
+/* Accessibilité : focus clavier toujours visible */
+:focus-visible {
+  outline: 3px solid var(--color-bronze);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Accessibilité : respecte « réduire les animations » */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 [dir="rtl"] body,
 [dir="rtl"] .font-display {
   font-family: "Cairo", sans-serif;

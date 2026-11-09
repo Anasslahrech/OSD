@@ -3,10 +3,14 @@ import Seo from '../components/Seo'
 import PageShell from './PageShell'
 import { site } from '../data/site'
 import { openCookieSettings } from '../lib/consent'
+import { tList } from '../lib/i18nHelpers'
 
 export default function Privacy() {
   const { t } = useTranslation()
   const vars = { name: site.name, email: site.email }
+  const cookieList = tList(t, 'privacy.cookieList', [])
+  const deleteHref = `mailto:${site.email}?subject=${encodeURIComponent(t('privacy.deleteSubject'))}&body=${encodeURIComponent(t('privacy.deleteBody'))}`
+  const btn = 'eyebrow mt-4 inline-block rounded-full border border-charcoal px-6 py-3 transition hover:bg-charcoal hover:text-bone'
 
   return (
     <>
@@ -34,9 +38,21 @@ export default function Privacy() {
           </section>
 
           <section>
+            <h2 className="mb-3 font-display text-3xl text-charcoal">{t('privacy.thirdTitle')}</h2>
+            <p>{t('privacy.thirdText')}</p>
+          </section>
+
+          <section id="cookies" className="scroll-mt-24">
             <h2 className="mb-3 font-display text-3xl text-charcoal">{t('privacy.cookiesTitle')}</h2>
             <p>{t('privacy.cookiesText')}</p>
-            <button onClick={openCookieSettings} className="eyebrow mt-4 rounded-full border border-charcoal px-6 py-3 transition hover:bg-charcoal hover:text-bone">
+            {cookieList.length > 0 && (
+              <ul className="mt-4 list-disc space-y-2 ps-6">
+                {cookieList.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            )}
+            <button type="button" onClick={openCookieSettings} className={btn}>
               {t('privacy.cookiesButton')}
             </button>
           </section>
@@ -44,6 +60,14 @@ export default function Privacy() {
           <section>
             <h2 className="mb-3 font-display text-3xl text-charcoal">{t('privacy.rightsTitle')}</h2>
             <p>{t('privacy.rightsText', vars)}</p>
+          </section>
+
+          <section id="suppression" className="scroll-mt-24">
+            <h2 className="mb-3 font-display text-3xl text-charcoal">{t('privacy.deleteTitle')}</h2>
+            <p>{t('privacy.deleteText', vars)}</p>
+            <a href={deleteHref} className={btn}>
+              {t('privacy.deleteButton')}
+            </a>
           </section>
         </div>
       </PageShell>

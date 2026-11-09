@@ -1,7 +1,15 @@
 // Pour ajouter un projet : déposer les photos dans /public/projects puis renseigner "gallery".
-// Facultatif : "before" / "after" pour afficher le curseur avant / après, "video" pour une vidéo.
-export const categories = ['Tous', 'Cabinets', 'Cuisines', 'Menuiserie', 'Faux plafond']
-
+// Facultatif : "videos" (liste de { src, poster }) pour afficher des vidéos sur la page du projet.
+export const categories = [
+  'Tous',
+  'Cabinets',
+  'Cuisines',
+  'Menuiserie',
+  'Faux plafond',
+  'Aménagement',
+  'Isolation',
+  'Plans',
+]
 const n = (prefix, count) => Array.from({ length: count }, (_, i) => `/projects/${prefix}-${i + 1}.jpg`)
 
 export const projects = [
@@ -14,7 +22,22 @@ export const projects = [
     year: 2025,
     description: "Aménagement complet d'un cabinet : cloisons, faux plafonds, menuiserie sur mesure et finitions soignées.",
     gallery: n('cabinet', 7),
-    video: '',
+    videos: [],
+  },
+  {
+    id: 'cabinet-medical',
+    title: 'Cabinet médical',
+    category: 'Cabinets',
+    service: 'Aménagement et mobilier sur mesure',
+    city: 'Kénitra',
+    year: 2026,
+    description:
+      "Rénovation d'un cabinet médical : du chantier à la finition, avec mobilier et rangements fabriqués sur mesure dans nos ateliers.",
+    gallery: n('cabinet-medical', 7),
+    videos: [
+      { src: '/videos/cabinet-meuble.mp4', poster: '/videos/cabinet-meuble.jpg' },
+      { src: '/videos/cabinet-avant.mp4', poster: '/videos/cabinet-avant.jpg' },
+    ],
   },
   {
     id: 'cuisine',
@@ -25,7 +48,7 @@ export const projects = [
     year: 2025,
     description: 'Cuisine aménagée sur mesure : agencement, rangements et finitions.',
     gallery: n('cuisine', 3),
-    video: '',
+    videos: [],
   },
   {
     id: 'menuiserie',
@@ -36,7 +59,18 @@ export const projects = [
     year: 2025,
     description: 'Menuiserie sur mesure : portes, placards et agencements réalisés dans nos ateliers.',
     gallery: n('menuiserie', 3),
-    video: '',
+    videos: [],
+  },
+  {
+    id: 'porte-noyer',
+    title: 'Porte en bois de noyer',
+    category: 'Menuiserie',
+    service: 'Menuiserie',
+    city: 'Kénitra',
+    year: 2026,
+    description: 'Porte en bois de noyer fabriquée sur mesure et posée avec une finition soignée.',
+    gallery: n('porte-noyer', 1),
+    videos: [{ src: '/videos/porte-noyer.mp4', poster: '/videos/porte-noyer.jpg' }],
   },
   {
     id: 'faux-plafond',
@@ -47,6 +81,87 @@ export const projects = [
     year: 2025,
     description: 'Faux plafonds décoratifs avec éclairage intégré, pour des intérieurs modernes.',
     gallery: n('faux-plafond', 6),
-    video: '',
+    videos: [],
+  },
+  {
+    id: 'salon',
+    title: 'Aménagement de salon',
+    category: 'Aménagement',
+    service: 'Aménagement intérieur',
+    city: 'Kénitra',
+    year: 2026,
+    description:
+      "Transformation d'un salon : faux plafond avec éclairage LED, finitions murales et sol. Les photos « après » sont suivies des photos « avant ».",
+    gallery: n('salon', 7),
+    videos: [],
+  },
+  {
+    id: 'isolation-green-box',
+    title: 'Produits d’isolation Green Box',
+    category: 'Isolation',
+    service: 'Isolation thermique',
+    city: 'Kénitra',
+    year: 2026,
+    description:
+      "Solutions d'isolation thermique : Polycoffre (Green Box), polystyrène et polyuréthane projeté, pour des bâtiments plus confortables et économes en énergie.",
+    gallery: n('isolation', 3),
+    videos: [],
+  },
+  {
+    id: 'dessins-plans',
+    title: 'Dessins et plans',
+    category: 'Plans',
+    service: 'Conception et plans 3D',
+    city: 'Kénitra',
+    year: 2026,
+    description: 'Plans et dessins 3D réalisés avant le chantier pour visualiser le projet : construction, cuisine, agencement.',
+    gallery: n('plans', 2),
+    videos: [],
+  },
+]
+
+// Filtre « Vidéos » (section Projects) : affiche uniquement ces vidéos, avec leur description.
+// Pour en ajouter une : déposer le .mp4 (et une image .jpg d'aperçu) dans /public/videos,
+// ajouter un objet ci-dessous, puis ses textes dans data.otherVideos.<id> des fichiers de langue.
+export const otherVideos = [
+  {
+    id: 'porte-bois',
+    title: 'Porte en bois',
+    service: 'Menuiserie',
+    description: 'Porte en bois sur mesure, posée avec une finition soignée.',
+    src: '/videos/realisation-1.mp4',
+    poster: '/videos/realisation-1.jpg',
+  },
+  {
+    id: 'porte-noyer',
+    title: 'Porte en bois de noyer',
+    service: 'Menuiserie',
+    description: 'Porte en bois de noyer sur mesure, de la fabrication à la pose.',
+    src: '/videos/porte-noyer.mp4',
+    poster: '/videos/porte-noyer.jpg',
+  },
+  {
+    id: 'salle-conference',
+    title: 'Réaménagement d’une salle de conférence',
+    service: 'Aménagement intérieur',
+    description: 'Visite de la salle de conférence réaménagée.',
+    src: '/videos/salle-conference.mp4',
+    poster: '/videos/salle-conference.jpg',
+  },
+  {
+    id: 'cabinet-meuble',
+    title: 'Mobilier du cabinet médical',
+    service: 'Menuiserie',
+    description: 'Mobilier et rangements sur mesure installés dans le cabinet médical.',
+    src: '/videos/cabinet-meuble.mp4',
+    poster: '/videos/cabinet-meuble.jpg',
+  },
+  {
+    id: 'cabinet-avant',
+    title: 'Cabinet médical : le chantier',
+    service: 'Aménagement des espaces plateaux',
+    description: 'Le cabinet médical avant et pendant les travaux.',
+    src: '/videos/cabinet-avant.mp4',
+    poster: '/videos/cabinet-avant.jpg',
   },
 ]

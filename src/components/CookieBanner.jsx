@@ -1,11 +1,14 @@
 import { useEffect, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { getConsent, setConsent } from '../lib/consent'
 
+// « Accepter » et « Refuser » ont exactement le même style (pas de « dark pattern »).
+const btn =
+  'eyebrow rounded-full border border-bone bg-bone px-6 py-3.5 text-charcoal transition hover:bg-sand focus-visible:outline-bronze'
+
 export default function CookieBanner() {
   const { t } = useTranslation()
-  const navigate = useNavigate()
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
@@ -20,8 +23,6 @@ export default function CookieBanner() {
   const choose = (value) => {
     setConsent(value)
     setVisible(false)
-    navigate('/')
-    window.scrollTo(0, 0)
   }
 
   return (
@@ -30,23 +31,17 @@ export default function CookieBanner() {
       aria-label={t('cookie.label')}
       className="fixed inset-x-3 bottom-3 z-[70] mx-auto max-w-3xl rounded-2xl bg-charcoal p-5 text-bone shadow-2xl md:bottom-5 md:p-6"
     >
-      <p className="text-sm leading-relaxed text-bone/80">
+      <p className="text-sm leading-relaxed text-bone/85">
         {t('cookie.text')}{' '}
-        <Link to="/confidentialite" className="underline hover:text-bronze-light">
+        <Link to="/confidentialite#cookies" className="underline hover:text-bronze-light">
           {t('cookie.policy')}
         </Link>
       </p>
       <div className="mt-4 flex flex-col gap-3 sm:flex-row">
-        <button
-          onClick={() => choose('granted')}
-          className="eyebrow rounded-full bg-bronze px-6 py-3.5 text-white transition hover:bg-bronze-light"
-        >
+        <button type="button" onClick={() => choose('granted')} className={btn}>
           {t('cookie.accept')}
         </button>
-        <button
-          onClick={() => choose('denied')}
-          className="eyebrow rounded-full border border-bone/50 px-6 py-3.5 text-bone transition hover:border-bronze"
-        >
+        <button type="button" onClick={() => choose('denied')} className={btn}>
           {t('cookie.refuse')}
         </button>
       </div>

@@ -14,6 +14,11 @@ function TikTok({ size = 20 }) {
   )
 }
 
+const socialLinks = {
+  facebook: 'https://web.facebook.com/profile.php?id=61596007179066',
+  linkedin: 'https://www.linkedin.com/in/overall-style-designer-660993447',
+}
+
 const socials = [
   { key: 'instagram', label: 'Instagram', Icon: Instagram },
   { key: 'facebook', label: 'Facebook', Icon: Facebook },
@@ -24,6 +29,8 @@ const socials = [
 export default function Footer() {
   const { t } = useTranslation()
   const zone = site.zone.map((z) => cityLabel(t, z)).join(t('common.listSeparator'))
+  const links = { ...site.social, ...socialLinks }
+
   return (
     <footer className="bg-charcoal px-5 py-14 text-bone/70 md:px-8">
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-3">
@@ -42,7 +49,8 @@ export default function Footer() {
           <Link to="/#contact" className="hover:text-bronze-light">{t('nav.contact')}</Link>
           <Link to="/mentions-legales" className="hover:text-bronze-light">{t('footer.legal')}</Link>
           <Link to="/confidentialite" className="hover:text-bronze-light">{t('footer.privacy')}</Link>
-          <button onClick={openCookieSettings} className="text-start hover:text-bronze-light">
+          <Link to="/conditions-utilisation" className="hover:text-bronze-light">{t('footer.terms')}</Link>
+          <button type="button" onClick={openCookieSettings} className="text-start hover:text-bronze-light">
             {t('footer.cookies')}
           </button>
         </nav>
@@ -50,10 +58,10 @@ export default function Footer() {
         <div>
           <p className="eyebrow mb-4 text-bone">{t('footer.follow')}</p>
           <ul className="flex gap-3">
-            {socials.filter(({ key }) => site.social[key] && site.social[key] !== '#').map(({ key, label, Icon }) => (
+            {socials.filter(({ key }) => links[key] && links[key] !== '#').map(({ key, label, Icon }) => (
               <li key={key}>
                 <a
-                  href={site.social[key]}
+                  href={links[key]}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
