@@ -7,9 +7,8 @@ export const categories = [
   'Menuiserie',
   'Faux plafond',
   'Aménagement',
-  'Isolation',
-  'Plans',
 ]
+
 const n = (prefix, count) => Array.from({ length: count }, (_, i) => `/projects/${prefix}-${i + 1}.jpg`)
 
 export const projects = [
@@ -20,20 +19,9 @@ export const projects = [
     service: 'Aménagement des espaces plateaux',
     city: 'Rabat',
     year: 2025,
-    description: "Aménagement complet d'un cabinet : cloisons, faux plafonds, menuiserie sur mesure et finitions soignées.",
-    gallery: n('cabinet', 7),
-    videos: [],
-  },
-  {
-    id: 'cabinet-medical',
-    title: 'Cabinet médical',
-    category: 'Cabinets',
-    service: 'Aménagement et mobilier sur mesure',
-    city: 'Kénitra',
-    year: 2026,
     description:
-      "Rénovation d'un cabinet médical : du chantier à la finition, avec mobilier et rangements fabriqués sur mesure dans nos ateliers.",
-    gallery: n('cabinet-medical', 7),
+      "Aménagement complet d'un cabinet : cloisons, faux plafonds, menuiserie sur mesure, mobilier et rangements fabriqués dans nos ateliers, jusqu'aux finitions soignées.",
+    gallery: [...n('cabinet', 7), ...n('cabinet-medical', 7)],
     videos: [
       { src: '/videos/cabinet-meuble.mp4', poster: '/videos/cabinet-meuble.jpg' },
       { src: '/videos/cabinet-avant.mp4', poster: '/videos/cabinet-avant.jpg' },
@@ -95,34 +83,9 @@ export const projects = [
     gallery: n('salon', 7),
     videos: [],
   },
-  {
-    id: 'isolation-green-box',
-    title: 'Produits d’isolation Green Box',
-    category: 'Isolation',
-    service: 'Isolation thermique',
-    city: 'Kénitra',
-    year: 2026,
-    description:
-      "Solutions d'isolation thermique : Polycoffre (Green Box), polystyrène et polyuréthane projeté, pour des bâtiments plus confortables et économes en énergie.",
-    gallery: n('isolation', 3),
-    videos: [],
-  },
-  {
-    id: 'dessins-plans',
-    title: 'Dessins et plans',
-    category: 'Plans',
-    service: 'Conception et plans 3D',
-    city: 'Kénitra',
-    year: 2026,
-    description: 'Plans et dessins 3D réalisés avant le chantier pour visualiser le projet : construction, cuisine, agencement.',
-    gallery: n('plans', 2),
-    videos: [],
-  },
 ]
 
-// Filtre « Vidéos » (section Projects) : affiche uniquement ces vidéos, avec leur description.
-// Pour en ajouter une : déposer le .mp4 (et une image .jpg d'aperçu) dans /public/videos,
-// ajouter un objet ci-dessous, puis ses textes dans data.otherVideos.<id> des fichiers de langue.
+// Ancien filtre « Vidéos » (supprimé du site). Conservé pour un usage futur.
 export const otherVideos = [
   {
     id: 'porte-bois',
@@ -131,37 +94,5 @@ export const otherVideos = [
     description: 'Porte en bois sur mesure, posée avec une finition soignée.',
     src: '/videos/realisation-1.mp4',
     poster: '/videos/realisation-1.jpg',
-  },
-  {
-    id: 'porte-noyer',
-    title: 'Porte en bois de noyer',
-    service: 'Menuiserie',
-    description: 'Porte en bois de noyer sur mesure, de la fabrication à la pose.',
-    src: '/videos/porte-noyer.mp4',
-    poster: '/videos/porte-noyer.jpg',
-  },
-  {
-    id: 'salle-conference',
-    title: 'Réaménagement d’une salle de conférence',
-    service: 'Aménagement intérieur',
-    description: 'Visite de la salle de conférence réaménagée.',
-    src: '/videos/salle-conference.mp4',
-    poster: '/videos/salle-conference.jpg',
-  },
-  {
-    id: 'cabinet-meuble',
-    title: 'Mobilier du cabinet médical',
-    service: 'Menuiserie',
-    description: 'Mobilier et rangements sur mesure installés dans le cabinet médical.',
-    src: '/videos/cabinet-meuble.mp4',
-    poster: '/videos/cabinet-meuble.jpg',
-  },
-  {
-    id: 'cabinet-avant',
-    title: 'Cabinet médical : le chantier',
-    service: 'Aménagement des espaces plateaux',
-    description: 'Le cabinet médical avant et pendant les travaux.',
-    src: '/videos/cabinet-avant.mp4',
-    poster: '/videos/cabinet-avant.jpg',
   },
 ]

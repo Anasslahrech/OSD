@@ -13,21 +13,21 @@
     "closeMenu": "Close menu",
     "skip": "Skip to content"
   },
-"hero": {
-  "country": "Morocco",
-  "line1": "OSD: The experience",
-  "line2": "that builds,",
-  "line3": "the style that sets us apart",
-  "description": "Overall Style Designer builds, renovates and fits out apartments, villas, professional offices and other premises. One team, one detailed quote, one point of contact.",
-  "points": [
-    "A single point of contact, from the first meeting to the handover of the keys",
-    "A clear budget and schedule from the start",
-    "Careful finishing, from the details to the final result",
-    "Regular follow-up of your site, even from a distance"
-  ],
-  "discover": "Discover our projects",
-  "quote": "Request a quote"
-},
+  "hero": {
+    "country": "Morocco",
+    "line1": "OSD: The experience",
+    "line2": "that builds,",
+    "line3": "the style that sets us apart",
+    "description": "Overall Style Designer builds, renovates and fits out apartments, villas, professional offices and other premises. One team, one detailed quote, one point of contact.",
+    "points": [
+      "A single point of contact, from the first meeting to the handover of the keys",
+      "A clear budget and schedule from the start",
+      "Careful finishing, from the details to the final result",
+      "Regular follow-up of your site, even from a distance"
+    ],
+    "discover": "Discover our projects",
+    "quote": "Request a quote"
+  },
   "cities": {
     "Kénitra": "Kenitra",
     "Rabat": "Rabat",
@@ -41,7 +41,6 @@
   },
   "categories": {
     "Tous": "All",
-    "Vidéos": "Others",
     "Appartements": "Apartments",
     "Villas": "Villas",
     "Maisons": "Houses",
@@ -51,8 +50,6 @@
     "Menuiserie": "Joinery",
     "Faux plafond": "False ceilings",
     "Aménagement": "Fit-out",
-    "Isolation": "Insulation",
-    "Plans": "Plans",
     "Rénovation": "Renovation",
     "Construction": "Construction"
   },
@@ -68,7 +65,8 @@
     "benefits": "Benefits",
     "quote": "Request a quote",
     "projects": "Our projects",
-    "seeBA": "View photos →"
+    "seeBA": "View photos →",
+    "products": "Our products"
   },
   "projectsSection": {
     "eyebrow": "Our projects",
@@ -113,29 +111,69 @@
       "Partners: architects, decorators, real estate agencies, developers"
     ],
     "stats": [
-      { "label": "Years of experience", "suffix": "+" },
-      { "label": "Cities served", "suffix": "" },
-      { "label": "Steps, from listening to warranty", "suffix": "" }
+      {
+        "label": "Years of experience",
+        "suffix": "+"
+      },
+      {
+        "label": "Cities served",
+        "suffix": ""
+      },
+      {
+        "label": "Steps, from listening to warranty",
+        "suffix": ""
+      }
     ],
     "valuesTitle": "Our values",
     "values": [
-      { "title": "Rigour", "text": "Sites that are organised, monitored and inspected." },
-      { "title": "Transparency", "text": "Clear quotes and honest communication." },
-      { "title": "Aesthetics", "text": "Attention to detail, from the choice of materials to the finishing." },
-      { "title": "Keeping our commitments", "text": "Deadlines and budgets announced to be met." }
+      {
+        "title": "Rigour",
+        "text": "Sites that are organised, monitored and inspected."
+      },
+      {
+        "title": "Transparency",
+        "text": "Clear quotes and honest communication."
+      },
+      {
+        "title": "Aesthetics",
+        "text": "Attention to detail, from the choice of materials to the finishing."
+      },
+      {
+        "title": "Keeping our commitments",
+        "text": "Deadlines and budgets announced to be met."
+      }
     ],
     "methodEyebrow": "Our method",
     "methodHeading": "Five steps, from the first conversation to the warranty.",
     "method": [
-      { "title": "Listening and site visit", "text": "We visit, listen to your project and note the constraints of the site." },
-      { "title": "Quote and design", "text": "A clear, itemised quote and a design suited to your project." },
-      { "title": "Planning", "text": "A precise schedule, agreed with you before work begins." },
-      { "title": "Execution and follow-up", "text": "An organised, monitored and inspected site, with regular updates." },
-      { "title": "Delivery and warranty", "text": "Handover with you, snagging resolved and a warranty after delivery." }
+      {
+        "title": "Listening and site visit",
+        "text": "We visit, listen to your project and note the constraints of the site."
+      },
+      {
+        "title": "Quote and design",
+        "text": "A clear, itemised quote and a design suited to your project."
+      },
+      {
+        "title": "Planning",
+        "text": "A precise schedule, agreed with you before work begins."
+      },
+      {
+        "title": "Execution and follow-up",
+        "text": "An organised, monitored and inspected site, with regular updates."
+      },
+      {
+        "title": "Delivery and warranty",
+        "text": "Handover with you, snagging resolved and a warranty after delivery."
+      }
     ],
     "abroadTitle": "Are you abroad?",
     "abroadText": "Building or renovating in Morocco from abroad? We keep you informed throughout the project: photos, videos and regular video-call updates.",
-    "abroadItems": ["Photos", "Videos", "Video-call updates"]
+    "abroadItems": [
+      "Photos",
+      "Videos",
+      "Video-call updates"
+    ]
   },
   "testimonials": {
     "eyebrow": "Client reviews",
@@ -345,10 +383,22 @@
         "text": "From the slab to handover: structural work, finishing work and final touches, with a single point of contact.",
         "intro": "Do you have a plot of land and a villa or house project? We handle the entire construction, from structural work to finishing, with a detailed schedule and quote from the start.",
         "steps": [
-          { "title": "Project study", "text": "Site visit, understanding your needs, validating the plans with your architect." },
-          { "title": "Detailed quote", "text": "Itemised pricing: earthworks, structural work, finishing work, final touches." },
-          { "title": "Supervised site", "text": "Signed schedule, regular updates and progress photos." },
-          { "title": "Handover", "text": "Final inspection, snagging and handing over the keys." }
+          {
+            "title": "Project study",
+            "text": "Site visit, understanding your needs, validating the plans with your architect."
+          },
+          {
+            "title": "Detailed quote",
+            "text": "Itemised pricing: earthworks, structural work, finishing work, final touches."
+          },
+          {
+            "title": "Supervised site",
+            "text": "Signed schedule, regular updates and progress photos."
+          },
+          {
+            "title": "Handover",
+            "text": "Final inspection, snagging and handing over the keys."
+          }
         ],
         "benefits": [
           "One point of contact from start to finish",
@@ -361,10 +411,22 @@
         "text": "Transformation of apartments, houses and villas: structure, layout, facade and compliance upgrades.",
         "intro": "Old apartment, house to modernise, villa to extend: we renovate entirely or room by room, limiting disruption and respecting your deadlines.",
         "steps": [
-          { "title": "Assessment", "text": "Survey, identification of technical constraints and priority works." },
-          { "title": "Proposal and quote", "text": "Solutions suited to your budget, with options priced separately." },
-          { "title": "Works", "text": "Demolition, structural repairs, plumbing, electrics, partitions and coverings." },
-          { "title": "Finishing and handover", "text": "Painting, fitting, end-of-site cleaning and handover with you." }
+          {
+            "title": "Assessment",
+            "text": "Survey, identification of technical constraints and priority works."
+          },
+          {
+            "title": "Proposal and quote",
+            "text": "Solutions suited to your budget, with options priced separately."
+          },
+          {
+            "title": "Works",
+            "text": "Demolition, structural repairs, plumbing, electrics, partitions and coverings."
+          },
+          {
+            "title": "Finishing and handover",
+            "text": "Painting, fitting, end-of-site cleaning and handover with you."
+          }
         ],
         "benefits": [
           "Full or phased renovation",
@@ -377,10 +439,22 @@
         "text": "Medical, dental and legal practices and offices: circulation, acoustics, lighting and careful finishing.",
         "intro": "Doctors, dentists, lawyers, architects: your premises are your working tool. We fit them out to be functional, welcoming and delivered on schedule so your opening is not delayed.",
         "steps": [
-          { "title": "Needs brief", "text": "Waiting room, consulting room, sterilisation, archives: each use is defined with you." },
-          { "title": "Plan and quote", "text": "Room layout, utilities (water, electricity, data) and detailed pricing." },
-          { "title": "Execution", "text": "Partitions, false ceilings, electrics, plumbing, bespoke joinery, coverings." },
-          { "title": "Turnkey delivery", "text": "Premises ready to equip and to welcome your patients or clients." }
+          {
+            "title": "Needs brief",
+            "text": "Waiting room, consulting room, sterilisation, archives: each use is defined with you."
+          },
+          {
+            "title": "Plan and quote",
+            "text": "Room layout, utilities (water, electricity, data) and detailed pricing."
+          },
+          {
+            "title": "Execution",
+            "text": "Partitions, false ceilings, electrics, plumbing, bespoke joinery, coverings."
+          },
+          {
+            "title": "Turnkey delivery",
+            "text": "Premises ready to equip and to welcome your patients or clients."
+          }
         ],
         "benefits": [
           "Strict respect of the opening schedule",
@@ -393,10 +467,22 @@
         "text": "Zellige, marble, large-format tiles, decorative plasters and high-end painting.",
         "intro": "Finishing makes the difference. We lay tiles, marble, zellige and decorative coverings, and carry out clean, durable paintwork suited to every room.",
         "steps": [
-          { "title": "Choice of materials", "text": "Advice on colours, formats and materials depending on how each room is used." },
-          { "title": "Surface preparation", "text": "Levelling, plastering and treatments for a perfectly flat base." },
-          { "title": "Fitting and application", "text": "Careful laying, even joints, multi-coat painting." },
-          { "title": "Final check", "text": "Room-by-room inspection before handing over the keys." }
+          {
+            "title": "Choice of materials",
+            "text": "Advice on colours, formats and materials depending on how each room is used."
+          },
+          {
+            "title": "Surface preparation",
+            "text": "Levelling, plastering and treatments for a perfectly flat base."
+          },
+          {
+            "title": "Fitting and application",
+            "text": "Careful laying, even joints, multi-coat painting."
+          },
+          {
+            "title": "Final check",
+            "text": "Room-by-room inspection before handing over the keys."
+          }
         ],
         "benefits": [
           "Careful fitting and precise alignment",
@@ -409,10 +495,22 @@
         "text": "New installations or complete rework, compliant and tested before delivery.",
         "intro": "Water supply, drainage, electrical panels, lighting: we carry out new installations or rework existing ones for greater safety and comfort.",
         "steps": [
-          { "title": "Survey and diagram", "text": "Locating water and electrical points, sizing the networks." },
-          { "title": "Installation", "text": "Fitting pipes, conduits, panel and fixtures." },
-          { "title": "Testing", "text": "Pressure tests, checking protections and operation." },
-          { "title": "Plans handover", "text": "Circuit marking to make future work easier." }
+          {
+            "title": "Survey and diagram",
+            "text": "Locating water and electrical points, sizing the networks."
+          },
+          {
+            "title": "Installation",
+            "text": "Fitting pipes, conduits, panel and fixtures."
+          },
+          {
+            "title": "Testing",
+            "text": "Pressure tests, checking protections and operation."
+          },
+          {
+            "title": "Plans handover",
+            "text": "Circuit marking to make future work easier."
+          }
         ],
         "benefits": [
           "Compliant and safe installations",
@@ -425,10 +523,22 @@
         "text": "Kitchens, dressing rooms, bespoke joinery, terraces, swimming pools and gardens.",
         "intro": "Open kitchen, custom dressing room, terrace, pool or garden: we design your living spaces to be beautiful, practical and easy to maintain.",
         "steps": [
-          { "title": "Design", "text": "Plans, moods and choice of materials with you." },
-          { "title": "Fabrication and preparation", "text": "Bespoke joinery and preparation of interior and exterior surfaces." },
-          { "title": "Installation", "text": "Fitting, connections and outdoor works." },
-          { "title": "Handover", "text": "Finish inspection and maintenance advice." }
+          {
+            "title": "Design",
+            "text": "Plans, moods and choice of materials with you."
+          },
+          {
+            "title": "Fabrication and preparation",
+            "text": "Bespoke joinery and preparation of interior and exterior surfaces."
+          },
+          {
+            "title": "Installation",
+            "text": "Fitting, connections and outdoor works."
+          },
+          {
+            "title": "Handover",
+            "text": "Finish inspection and maintenance advice."
+          }
         ],
         "benefits": [
           "Bespoke joinery",
@@ -441,10 +551,22 @@
         "text": "Alucobond cladding, Trespa profiles, aluminium, siding and other solutions for a modern, durable façade.",
         "intro": "A façade makes the first impression of your building. We install Alucobond and Trespa cladding, aluminium, siding and other solutions to modernise and protect your façades.",
         "steps": [
-          { "title": "Survey and choice of materials", "text": "Site visit, measurements and choice of cladding and colours." },
-          { "title": "Plan and quote", "text": "Detailed pricing and panel layout of the façade before work starts." },
-          { "title": "Cladding installation", "text": "Framework, fixing and installation of Alucobond, Trespa, aluminium or siding." },
-          { "title": "Final check", "text": "Inspection of alignments, joints and finishes before handover." }
+          {
+            "title": "Survey and choice of materials",
+            "text": "Site visit, measurements and choice of cladding and colours."
+          },
+          {
+            "title": "Plan and quote",
+            "text": "Detailed pricing and panel layout of the façade before work starts."
+          },
+          {
+            "title": "Cladding installation",
+            "text": "Framework, fixing and installation of Alucobond, Trespa, aluminium or siding."
+          },
+          {
+            "title": "Final check",
+            "text": "Inspection of alignments, joints and finishes before handover."
+          }
         ],
         "benefits": [
           "Alucobond, Trespa, aluminium, siding",
@@ -457,9 +579,18 @@
         "text": "Polystyrene, polyurethane and polycoffre, in collaboration with SMH Le Designeur.",
         "intro": "We sell insulation products: polystyrene, polyurethane and polycoffre, in collaboration with SMH Le Designeur.",
         "steps": [
-          { "title": "Choice of product", "text": "Advice on the type of insulation suited to your project: polystyrene, polyurethane or polycoffre." },
-          { "title": "Quote", "text": "Detailed quantities and prices according to your needs." },
-          { "title": "Delivery", "text": "Order prepared and delivered according to your site schedule." }
+          {
+            "title": "Choice of product",
+            "text": "Advice on the type of insulation suited to your project: polystyrene, polyurethane or polycoffre."
+          },
+          {
+            "title": "Quote",
+            "text": "Detailed quantities and prices according to your needs."
+          },
+          {
+            "title": "Delivery",
+            "text": "Order prepared and delivered according to your site schedule."
+          }
         ],
         "benefits": [
           "Polystyrene, polyurethane, polycoffre",
@@ -470,19 +601,28 @@
           "label": "In collaboration with",
           "name": "SMH Le Designeur",
           "logo": "/images/smh-le-designeur.png"
-        }
+        },
+        "products": [
+          {
+            "title": "Green Box Polycoffre",
+            "text": "Insulating lintel box, lightweight and versatile. Simple and quick to install, eco-friendly solution. ECOPOL 25, 30 and 35 models."
+          },
+          {
+            "title": "Polystyrene",
+            "text": "Lightweight insulation boards, easy to fit on walls and façades, to limit heat loss."
+          },
+          {
+            "title": "Polyurethane",
+            "text": "Insulating foam sprayed on site: it follows the surfaces and fills the gaps for continuous insulation."
+          }
+        ]
       }
     },
     "projects": {
       "cabinet": {
         "title": "Clinic fit-out",
         "service": "Open-plan space fit-out",
-        "description": "Complete clinic fit-out: partitions, false ceilings, custom joinery and careful finishes."
-      },
-      "cabinet-medical": {
-        "title": "Medical practice",
-        "service": "Fit-out and bespoke furniture",
-        "description": "Renovation of a medical practice: from the site works to the finishing, with furniture and storage made to measure in our workshops."
+        "description": "Complete clinic fit-out: partitions, false ceilings, custom joinery, furniture and storage made in our workshops, down to the careful finishes."
       },
       "cuisine": {
         "title": "Kitchen fit-out",
@@ -508,16 +648,6 @@
         "title": "Living room fit-out",
         "service": "Interior fit-out",
         "description": "Transformation of a living room: false ceiling with LED lighting, wall and floor finishes. The “after” photos are followed by the “before” photos."
-      },
-      "isolation-green-box": {
-        "title": "Green Box insulation products",
-        "service": "Thermal insulation",
-        "description": "Thermal insulation solutions: Polycoffre (Green Box), polystyrene and sprayed polyurethane, for more comfortable and energy-efficient buildings."
-      },
-      "dessins-plans": {
-        "title": "Drawings and plans",
-        "service": "Design and 3D plans",
-        "description": "Plans and 3D drawings produced before the works to visualise the project: construction, kitchen, layout."
       }
     },
     "otherVideos": {

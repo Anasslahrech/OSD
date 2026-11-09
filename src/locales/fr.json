@@ -13,21 +13,21 @@
     "closeMenu": "Fermer le menu",
     "skip": "Aller au contenu"
   },
-"hero": {
-  "country": "Maroc",
-  "line1": "OSD : L'expérience",
-  "line2": "qui construit,",
-  "line3": "le style qui distingue",
-  "description": "Overall Style Designer construit, rénove et aménage appartements, villas, cabinets professionnels et autres locaux. Une équipe, un devis détaillé, un interlocuteur.",
-  "points": [
-    "Un interlocuteur unique, du premier rendez-vous à la remise des clés",
-    "Un budget et un planning clairs dès le départ",
-    "Des finitions soignées, du détail au résultat final",
-    "Un suivi régulier de votre chantier, même à distance"
-  ],
-  "discover": "Découvrir nos projets",
-  "quote": "Demander un devis"
-},
+  "hero": {
+    "country": "Maroc",
+    "line1": "OSD : L'expérience",
+    "line2": "qui construit,",
+    "line3": "le style qui distingue",
+    "description": "Overall Style Designer construit, rénove et aménage appartements, villas, cabinets professionnels et autres locaux. Une équipe, un devis détaillé, un interlocuteur.",
+    "points": [
+      "Un interlocuteur unique, du premier rendez-vous à la remise des clés",
+      "Un budget et un planning clairs dès le départ",
+      "Des finitions soignées, du détail au résultat final",
+      "Un suivi régulier de votre chantier, même à distance"
+    ],
+    "discover": "Découvrir nos projets",
+    "quote": "Demander un devis"
+  },
   "cities": {
     "Kénitra": "Kénitra",
     "Rabat": "Rabat",
@@ -41,7 +41,6 @@
   },
   "categories": {
     "Tous": "Tous",
-    "Vidéos": "Autres",
     "Appartements": "Appartements",
     "Villas": "Villas",
     "Maisons": "Maisons",
@@ -51,8 +50,6 @@
     "Menuiserie": "Menuiserie",
     "Faux plafond": "Faux plafond",
     "Aménagement": "Aménagement",
-    "Isolation": "Isolation",
-    "Plans": "Plans",
     "Rénovation": "Rénovation",
     "Construction": "Construction"
   },
@@ -68,7 +65,8 @@
     "benefits": "Les avantages",
     "quote": "Demander un devis",
     "projects": "Nos réalisations",
-    "seeBA": "Voir les photos →"
+    "seeBA": "Voir les photos →",
+    "products": "Nos produits"
   },
   "projectsSection": {
     "eyebrow": "Nos réalisations",
@@ -113,29 +111,69 @@
       "Partenaires : architectes, décorateurs, agences immobilières, promoteurs"
     ],
     "stats": [
-      { "label": "Ans d'expérience", "suffix": "+" },
-      { "label": "Villes d'intervention", "suffix": "" },
-      { "label": "Étapes, de l'écoute à la garantie", "suffix": "" }
+      {
+        "label": "Ans d'expérience",
+        "suffix": "+"
+      },
+      {
+        "label": "Villes d'intervention",
+        "suffix": ""
+      },
+      {
+        "label": "Étapes, de l'écoute à la garantie",
+        "suffix": ""
+      }
     ],
     "valuesTitle": "Nos valeurs",
     "values": [
-      { "title": "Rigueur", "text": "Des chantiers organisés, suivis et contrôlés." },
-      { "title": "Transparence", "text": "Des devis clairs, une communication honnête." },
-      { "title": "Esthétique", "text": "Le souci du détail, du choix des matériaux à la finition." },
-      { "title": "Respect des engagements", "text": "Des délais et des budgets annoncés pour être tenus." }
+      {
+        "title": "Rigueur",
+        "text": "Des chantiers organisés, suivis et contrôlés."
+      },
+      {
+        "title": "Transparence",
+        "text": "Des devis clairs, une communication honnête."
+      },
+      {
+        "title": "Esthétique",
+        "text": "Le souci du détail, du choix des matériaux à la finition."
+      },
+      {
+        "title": "Respect des engagements",
+        "text": "Des délais et des budgets annoncés pour être tenus."
+      }
     ],
     "methodEyebrow": "Notre méthode",
     "methodHeading": "Cinq étapes, du premier échange à la garantie.",
     "method": [
-      { "title": "Écoute et visite", "text": "Nous nous déplaçons, écoutons votre projet et relevons les contraintes du lieu." },
-      { "title": "Devis et conception", "text": "Un devis clair, poste par poste, et une conception adaptée à votre projet." },
-      { "title": "Planification", "text": "Un planning précis, validé avec vous avant le début des travaux." },
-      { "title": "Réalisation et suivi", "text": "Un chantier organisé, suivi et contrôlé, avec des points réguliers." },
-      { "title": "Livraison et garantie", "text": "Réception avec vous, levée des réserves et garantie après livraison." }
+      {
+        "title": "Écoute et visite",
+        "text": "Nous nous déplaçons, écoutons votre projet et relevons les contraintes du lieu."
+      },
+      {
+        "title": "Devis et conception",
+        "text": "Un devis clair, poste par poste, et une conception adaptée à votre projet."
+      },
+      {
+        "title": "Planification",
+        "text": "Un planning précis, validé avec vous avant le début des travaux."
+      },
+      {
+        "title": "Réalisation et suivi",
+        "text": "Un chantier organisé, suivi et contrôlé, avec des points réguliers."
+      },
+      {
+        "title": "Livraison et garantie",
+        "text": "Réception avec vous, levée des réserves et garantie après livraison."
+      }
     ],
     "abroadTitle": "Vous êtes à l'étranger ?",
     "abroadText": "Vous construisez ou rénovez au Maroc depuis l'étranger ? Nous vous tenons informé tout au long du chantier : photos, vidéos et points réguliers par appel vidéo.",
-    "abroadItems": ["Photos", "Vidéos", "Points par appel vidéo"]
+    "abroadItems": [
+      "Photos",
+      "Vidéos",
+      "Points par appel vidéo"
+    ]
   },
   "testimonials": {
     "eyebrow": "Avis clients",
@@ -345,10 +383,22 @@
         "text": "De la dalle à la livraison : gros œuvre, second œuvre et finitions, avec un seul interlocuteur.",
         "intro": "Vous avez un terrain et un projet de villa ou de maison ? Nous prenons en charge la construction complète, du gros œuvre aux finitions, avec un planning et un devis détaillés dès le départ.",
         "steps": [
-          { "title": "Étude du projet", "text": "Visite du terrain, écoute de vos besoins, validation des plans avec votre architecte." },
-          { "title": "Devis détaillé", "text": "Chiffrage poste par poste : terrassement, gros œuvre, second œuvre, finitions." },
-          { "title": "Chantier suivi", "text": "Planning signé, points réguliers et photos d'avancement." },
-          { "title": "Livraison", "text": "Contrôle final, levée des réserves et remise des clés." }
+          {
+            "title": "Étude du projet",
+            "text": "Visite du terrain, écoute de vos besoins, validation des plans avec votre architecte."
+          },
+          {
+            "title": "Devis détaillé",
+            "text": "Chiffrage poste par poste : terrassement, gros œuvre, second œuvre, finitions."
+          },
+          {
+            "title": "Chantier suivi",
+            "text": "Planning signé, points réguliers et photos d'avancement."
+          },
+          {
+            "title": "Livraison",
+            "text": "Contrôle final, levée des réserves et remise des clés."
+          }
         ],
         "benefits": [
           "Un seul interlocuteur du début à la fin",
@@ -361,10 +411,22 @@
         "text": "Transformation d'appartements, maisons et villas : structure, distribution, façade et remise aux normes.",
         "intro": "Appartement ancien, maison à moderniser, villa à agrandir : nous rénovons en totalité ou pièce par pièce, en limitant les nuisances et en respectant vos délais.",
         "steps": [
-          { "title": "Diagnostic", "text": "État des lieux, repérage des contraintes techniques et des travaux prioritaires." },
-          { "title": "Proposition et devis", "text": "Solutions adaptées à votre budget, avec options chiffrées séparément." },
-          { "title": "Travaux", "text": "Démolition, reprise de structure, plomberie, électricité, cloisons et revêtements." },
-          { "title": "Finitions et réception", "text": "Peinture, pose, nettoyage de fin de chantier et réception avec vous." }
+          {
+            "title": "Diagnostic",
+            "text": "État des lieux, repérage des contraintes techniques et des travaux prioritaires."
+          },
+          {
+            "title": "Proposition et devis",
+            "text": "Solutions adaptées à votre budget, avec options chiffrées séparément."
+          },
+          {
+            "title": "Travaux",
+            "text": "Démolition, reprise de structure, plomberie, électricité, cloisons et revêtements."
+          },
+          {
+            "title": "Finitions et réception",
+            "text": "Peinture, pose, nettoyage de fin de chantier et réception avec vous."
+          }
         ],
         "benefits": [
           "Rénovation totale ou par étapes",
@@ -377,10 +439,22 @@
         "text": "Cabinets médicaux, dentaires et juridiques, bureaux : circulation, acoustique, éclairage et finitions soignées.",
         "intro": "Médecins, dentistes, avocats, architectes : votre local est votre outil de travail. Nous l'aménageons pour qu'il soit fonctionnel, accueillant et livré dans les délais, afin que votre ouverture ne soit pas retardée.",
         "steps": [
-          { "title": "Expression du besoin", "text": "Salle d'attente, salle de consultation, stérilisation, archives : chaque usage est défini avec vous." },
-          { "title": "Plan et devis", "text": "Distribution des pièces, réseaux (eau, électricité, données) et chiffrage détaillé." },
-          { "title": "Réalisation", "text": "Cloisons, faux plafonds, électricité, plomberie, menuiserie sur mesure, revêtements." },
-          { "title": "Livraison clé en main", "text": "Local prêt à équiper et à accueillir vos patients ou clients." }
+          {
+            "title": "Expression du besoin",
+            "text": "Salle d'attente, salle de consultation, stérilisation, archives : chaque usage est défini avec vous."
+          },
+          {
+            "title": "Plan et devis",
+            "text": "Distribution des pièces, réseaux (eau, électricité, données) et chiffrage détaillé."
+          },
+          {
+            "title": "Réalisation",
+            "text": "Cloisons, faux plafonds, électricité, plomberie, menuiserie sur mesure, revêtements."
+          },
+          {
+            "title": "Livraison clé en main",
+            "text": "Local prêt à équiper et à accueillir vos patients ou clients."
+          }
         ],
         "benefits": [
           "Respect strict du calendrier d'ouverture",
@@ -393,10 +467,22 @@
         "text": "Zellige, marbre, carrelage grand format, enduits décoratifs et peinture haut de gamme.",
         "intro": "Les finitions font la différence. Nous posons carrelage, marbre, zellige et revêtements décoratifs, et réalisons des peintures nettes, durables et adaptées à chaque pièce.",
         "steps": [
-          { "title": "Choix des matériaux", "text": "Conseils sur les teintes, formats et matières selon l'usage de chaque pièce." },
-          { "title": "Préparation des supports", "text": "Ragréage, enduits et traitements pour une base parfaitement plane." },
-          { "title": "Pose et application", "text": "Pose soignée, joints réguliers, peinture en plusieurs couches." },
-          { "title": "Contrôle final", "text": "Vérification pièce par pièce avant remise des clés." }
+          {
+            "title": "Choix des matériaux",
+            "text": "Conseils sur les teintes, formats et matières selon l'usage de chaque pièce."
+          },
+          {
+            "title": "Préparation des supports",
+            "text": "Ragréage, enduits et traitements pour une base parfaitement plane."
+          },
+          {
+            "title": "Pose et application",
+            "text": "Pose soignée, joints réguliers, peinture en plusieurs couches."
+          },
+          {
+            "title": "Contrôle final",
+            "text": "Vérification pièce par pièce avant remise des clés."
+          }
         ],
         "benefits": [
           "Pose soignée et alignements précis",
@@ -409,10 +495,22 @@
         "text": "Installations neuves ou reprises complètes, conformes et testées avant livraison.",
         "intro": "Réseaux d'eau, évacuations, tableaux électriques, éclairage : nous réalisons des installations neuves ou reprenons l'existant pour plus de sécurité et de confort.",
         "steps": [
-          { "title": "Relevé et schéma", "text": "Repérage des points d'eau et d'électricité, dimensionnement des réseaux." },
-          { "title": "Installation", "text": "Pose des canalisations, gaines, tableau et appareillage." },
-          { "title": "Tests", "text": "Essais en pression, contrôle des protections et du fonctionnement." },
-          { "title": "Remise des plans", "text": "Repérage des circuits pour faciliter les interventions futures." }
+          {
+            "title": "Relevé et schéma",
+            "text": "Repérage des points d'eau et d'électricité, dimensionnement des réseaux."
+          },
+          {
+            "title": "Installation",
+            "text": "Pose des canalisations, gaines, tableau et appareillage."
+          },
+          {
+            "title": "Tests",
+            "text": "Essais en pression, contrôle des protections et du fonctionnement."
+          },
+          {
+            "title": "Remise des plans",
+            "text": "Repérage des circuits pour faciliter les interventions futures."
+          }
         ],
         "benefits": [
           "Installations conformes et sécurisées",
@@ -425,10 +523,22 @@
         "text": "Cuisines, dressings, menuiserie sur mesure, terrasses, piscines et jardins.",
         "intro": "Cuisine ouverte, dressing sur mesure, terrasse, piscine ou jardin : nous aménageons vos espaces de vie pour qu'ils soient beaux, pratiques et faciles à entretenir.",
         "steps": [
-          { "title": "Conception", "text": "Plans, ambiances et choix des matériaux avec vous." },
-          { "title": "Fabrication et préparation", "text": "Menuiserie sur mesure et préparation des surfaces intérieures et extérieures." },
-          { "title": "Installation", "text": "Pose, raccordements et travaux extérieurs." },
-          { "title": "Réception", "text": "Contrôle des finitions et conseils d'entretien." }
+          {
+            "title": "Conception",
+            "text": "Plans, ambiances et choix des matériaux avec vous."
+          },
+          {
+            "title": "Fabrication et préparation",
+            "text": "Menuiserie sur mesure et préparation des surfaces intérieures et extérieures."
+          },
+          {
+            "title": "Installation",
+            "text": "Pose, raccordements et travaux extérieurs."
+          },
+          {
+            "title": "Réception",
+            "text": "Contrôle des finitions et conseils d'entretien."
+          }
         ],
         "benefits": [
           "Menuiserie sur mesure",
@@ -441,10 +551,22 @@
         "text": "Bardage Alucobond, profilés Trespa, aluminium, siding et autres solutions pour une façade moderne et durable.",
         "intro": "Une façade fait la première impression de votre bâtiment. Nous posons des bardages Alucobond et Trespa, de l'aluminium, du siding et d'autres solutions pour moderniser et protéger vos façades.",
         "steps": [
-          { "title": "Relevé et choix des matériaux", "text": "Visite du bâtiment, prise de mesures et choix du bardage et des coloris." },
-          { "title": "Plan et devis", "text": "Chiffrage détaillé et calepinage des panneaux de la façade avant le début des travaux." },
-          { "title": "Pose du bardage", "text": "Ossature, fixation et pose d'Alucobond, de Trespa, d'aluminium ou de siding." },
-          { "title": "Contrôle final", "text": "Vérification des alignements, des joints et des finitions avant livraison." }
+          {
+            "title": "Relevé et choix des matériaux",
+            "text": "Visite du bâtiment, prise de mesures et choix du bardage et des coloris."
+          },
+          {
+            "title": "Plan et devis",
+            "text": "Chiffrage détaillé et calepinage des panneaux de la façade avant le début des travaux."
+          },
+          {
+            "title": "Pose du bardage",
+            "text": "Ossature, fixation et pose d'Alucobond, de Trespa, d'aluminium ou de siding."
+          },
+          {
+            "title": "Contrôle final",
+            "text": "Vérification des alignements, des joints et des finitions avant livraison."
+          }
         ],
         "benefits": [
           "Alucobond, Trespa, aluminium, siding",
@@ -457,9 +579,18 @@
         "text": "Polystyrène, polyuréthane et polycoffre, en collaboration avec SMH Le Designeur.",
         "intro": "Nous vendons des produits d'isolation : polystyrène, polyuréthane et polycoffre, en collaboration avec SMH Le Designeur.",
         "steps": [
-          { "title": "Choix du produit", "text": "Conseils sur le type d'isolant adapté à votre projet : polystyrène, polyuréthane ou polycoffre." },
-          { "title": "Devis", "text": "Quantités et prix détaillés selon vos besoins." },
-          { "title": "Livraison", "text": "Commande préparée et livrée selon le planning de votre chantier." }
+          {
+            "title": "Choix du produit",
+            "text": "Conseils sur le type d'isolant adapté à votre projet : polystyrène, polyuréthane ou polycoffre."
+          },
+          {
+            "title": "Devis",
+            "text": "Quantités et prix détaillés selon vos besoins."
+          },
+          {
+            "title": "Livraison",
+            "text": "Commande préparée et livrée selon le planning de votre chantier."
+          }
         ],
         "benefits": [
           "Polystyrène, polyuréthane, polycoffre",
@@ -470,25 +601,76 @@
           "label": "En collaboration avec",
           "name": "SMH Le Designeur",
           "logo": "/images/smh-le-designeur.png"
-        }
+        },
+        "products": [
+          {
+            "title": "Polycoffre Green Box",
+            "text": "Coffre isolant pour linteaux, léger et polyvalent. Installation simple et rapide, solution écologique. Modèles ECOPOL 25, 30 et 35."
+          },
+          {
+            "title": "Polystyrène",
+            "text": "Panneaux isolants légers, faciles à poser sur les murs et les façades, pour limiter les déperditions de chaleur."
+          },
+          {
+            "title": "Polyuréthane",
+            "text": "Mousse isolante projetée sur place : elle épouse les surfaces et comble les espaces pour une isolation continue."
+          }
+        ]
       }
     },
     "projects": {
-      "cabinet": { "title": "Aménagement de cabinet", "service": "Aménagement des espaces plateaux", "description": "Aménagement complet d'un cabinet : cloisons, faux plafonds, menuiserie sur mesure et finitions soignées." },
-      "cabinet-medical": { "title": "Cabinet médical", "service": "Aménagement et mobilier sur mesure", "description": "Rénovation d'un cabinet médical : du chantier à la finition, avec mobilier et rangements fabriqués sur mesure dans nos ateliers." },
-      "cuisine": { "title": "Aménagement de cuisine", "service": "Aménagement intérieur", "description": "Cuisine aménagée sur mesure : agencement, rangements et finitions." },
-      "menuiserie": { "title": "Menuiserie sur mesure", "service": "Menuiserie", "description": "Menuiserie sur mesure : portes, placards et agencements réalisés dans nos ateliers." },
-      "porte-noyer": { "title": "Porte en bois de noyer", "service": "Menuiserie", "description": "Porte en bois de noyer fabriquée sur mesure et posée avec une finition soignée." },
-      "faux-plafond": { "title": "Faux plafonds", "service": "Faux plafond", "description": "Faux plafonds décoratifs avec éclairage intégré, pour des intérieurs modernes." },
-      "salon": { "title": "Aménagement de salon", "service": "Aménagement intérieur", "description": "Transformation d'un salon : faux plafond avec éclairage LED, finitions murales et sol. Les photos « après » sont suivies des photos « avant »." },
-      "isolation-green-box": { "title": "Produits d’isolation Green Box", "service": "Isolation thermique", "description": "Solutions d'isolation thermique : Polycoffre (Green Box), polystyrène et polyuréthane projeté, pour des bâtiments plus confortables et économes en énergie." },
-      "dessins-plans": { "title": "Dessins et plans", "service": "Conception et plans 3D", "description": "Plans et dessins 3D réalisés avant le chantier pour visualiser le projet : construction, cuisine, agencement." }
+      "cabinet": {
+        "title": "Aménagement de cabinet",
+        "service": "Aménagement des espaces plateaux",
+        "description": "Aménagement complet d'un cabinet : cloisons, faux plafonds, menuiserie sur mesure, mobilier et rangements fabriqués dans nos ateliers, jusqu'aux finitions soignées."
+      },
+      "cuisine": {
+        "title": "Aménagement de cuisine",
+        "service": "Aménagement intérieur",
+        "description": "Cuisine aménagée sur mesure : agencement, rangements et finitions."
+      },
+      "menuiserie": {
+        "title": "Menuiserie sur mesure",
+        "service": "Menuiserie",
+        "description": "Menuiserie sur mesure : portes, placards et agencements réalisés dans nos ateliers."
+      },
+      "porte-noyer": {
+        "title": "Porte en bois de noyer",
+        "service": "Menuiserie",
+        "description": "Porte en bois de noyer fabriquée sur mesure et posée avec une finition soignée."
+      },
+      "faux-plafond": {
+        "title": "Faux plafonds",
+        "service": "Faux plafond",
+        "description": "Faux plafonds décoratifs avec éclairage intégré, pour des intérieurs modernes."
+      },
+      "salon": {
+        "title": "Aménagement de salon",
+        "service": "Aménagement intérieur",
+        "description": "Transformation d'un salon : faux plafond avec éclairage LED, finitions murales et sol. Les photos « après » sont suivies des photos « avant »."
+      }
     },
     "otherVideos": {
-      "porte-bois": { "title": "Porte en bois", "service": "Menuiserie", "description": "Porte en bois sur mesure, posée avec une finition soignée." },
-      "salle-conference": { "title": "Réaménagement d’une salle de conférence", "service": "Aménagement intérieur", "description": "Visite de la salle de conférence réaménagée." },
-      "cabinet-meuble": { "title": "Mobilier du cabinet médical", "service": "Menuiserie", "description": "Mobilier et rangements sur mesure installés dans le cabinet médical." },
-      "cabinet-avant": { "title": "Cabinet médical : le chantier", "service": "Aménagement des espaces plateaux", "description": "Le cabinet médical avant et pendant les travaux." }
+      "porte-bois": {
+        "title": "Porte en bois",
+        "service": "Menuiserie",
+        "description": "Porte en bois sur mesure, posée avec une finition soignée."
+      },
+      "salle-conference": {
+        "title": "Réaménagement d’une salle de conférence",
+        "service": "Aménagement intérieur",
+        "description": "Visite de la salle de conférence réaménagée."
+      },
+      "cabinet-meuble": {
+        "title": "Mobilier du cabinet médical",
+        "service": "Menuiserie",
+        "description": "Mobilier et rangements sur mesure installés dans le cabinet médical."
+      },
+      "cabinet-avant": {
+        "title": "Cabinet médical : le chantier",
+        "service": "Aménagement des espaces plateaux",
+        "description": "Le cabinet médical avant et pendant les travaux."
+      }
     },
     "posts": {
       "renover-un-appartement-par-ou-commencer": {

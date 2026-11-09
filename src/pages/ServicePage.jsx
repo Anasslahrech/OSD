@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { ArrowLeft, Check } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
@@ -15,6 +16,9 @@ export default function ServicePage() {
   if (!base) return <Navigate to="/404" replace />
   const service = tData(t, `data.services.${base.slug}`, base)
   const partner = base.partner ? { ...base.partner, ...(service.partner || {}) } : null
+
+  // Les images viennent de site.js ; les textes sont remplacés par la traduction si elle existe.
+  const products = (base.products || []).map((p, i) => ({ ...p, ...(service.products?.[i] || {}), image: p.image }))
 
   const Icon = serviceIcons[base.icon]
   const related = projects
@@ -51,6 +55,17 @@ export default function ServicePage() {
                 </li>
               ))}
             </ol>
+
+            {products.length > 0 && (
+              <>
+                <h2 className="mb-6 mt-14 font-display text-4xl">{t('servicePage.products')}</h2>
+                <div className="grid gap-6 sm:grid-cols-3">
+                  {products.map((p) => (
+                    <ProductCard key={p.image} product={p} />
+                  ))}
+                </div>
+              </>
+            )}
           </div>
 
           <aside className="lg:col-span-2">
@@ -97,5 +112,32 @@ export default function ServicePage() {
         )}
       </PageShell>
     </>
+  )
+}
+
+// Carte produit : photo cliquable (ouvre l'image en grand) + titre + description.
+function ProductCard({ product }) {
+  const [failed, setFailed] = useState(false)
+  return (
+    <div>
+      {!failed && (
+        <a
+          href={product.image}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block aspect-[4/5] overflow-hidden rounded-xl border border-charcoal/10 bg-white"
+        >
+          <img
+            src={product.image}
+            alt={product.title}
+            loading="lazy"
+            onError={() => setFailed(true)}
+            className="h-full w-full object-contain transition duration-500 hover:scale-105"
+          />
+        </a>
+      )}
+      <h3 className="mt-4 font-display text-2xl">{product.title}</h3>
+      <p className="mt-1 text-sm leading-relaxed text-charcoal/70">{product.text}</p>
+    </div>
   )
 }

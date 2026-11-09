@@ -174,6 +174,24 @@ export const services = [
       name: 'SMH Le Designeur',
       logo: '/images/smh-le-designeur.png',
     },
+    // Produits affichés dans la section « Nos produits » (textes traduits dans les fichiers de langue)
+    products: [
+      {
+        image: '/projects/isolation-1.jpg',
+        title: 'Polycoffre Green Box',
+        text: 'Coffre isolant pour linteaux, léger et polyvalent. Installation simple et rapide, solution écologique. Modèles ECOPOL 25, 30 et 35.',
+      },
+      {
+        image: '/projects/isolation-2.jpg',
+        title: 'Polystyrène',
+        text: 'Panneaux isolants légers, faciles à poser sur les murs et les façades, pour limiter les déperditions de chaleur.',
+      },
+      {
+        image: '/projects/isolation-3.jpg',
+        title: 'Polyuréthane',
+        text: 'Mousse isolante projetée sur place : elle épouse les surfaces et comble les espaces pour une isolation continue.',
+      },
+    ],
   },
 ]
 
