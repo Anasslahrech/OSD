@@ -43,6 +43,17 @@ export default function ServicePage() {
             <p className="text-xl leading-relaxed text-charcoal/80">{service.intro}</p>
             <Partner partner={partner} />
 
+            {products.length > 0 && (
+              <>
+                <h2 className="mb-6 mt-14 font-display text-4xl">{t('servicePage.products')}</h2>
+                <div className="grid gap-6 sm:grid-cols-3">
+                  {products.map((p) => (
+                    <ProductCard key={p.image} product={p} />
+                  ))}
+                </div>
+              </>
+            )}
+
             <h2 className="mb-6 mt-14 font-display text-4xl">{t('servicePage.how')}</h2>
             <ol className="space-y-6">
               {service.steps.map((s, i) => (
@@ -55,17 +66,6 @@ export default function ServicePage() {
                 </li>
               ))}
             </ol>
-
-            {products.length > 0 && (
-              <>
-                <h2 className="mb-6 mt-14 font-display text-4xl">{t('servicePage.products')}</h2>
-                <div className="grid gap-6 sm:grid-cols-3">
-                  {products.map((p) => (
-                    <ProductCard key={p.image} product={p} />
-                  ))}
-                </div>
-              </>
-            )}
           </div>
 
           <aside className="lg:col-span-2">

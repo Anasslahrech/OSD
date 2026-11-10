@@ -77,6 +77,14 @@ export default function QuoteForm() {
     }
 
     try {
+      // Date d'envoi pour la variable {{time}} du template EmailJS
+      if (formRef.current?.elements?.time) {
+        formRef.current.elements.time.value = new Date().toLocaleString('fr-FR')
+      }
+
+      // Diagnostic temporaire : à supprimer une fois l'envoi fonctionnel
+      console.log('EmailJS IDs:', { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY })
+
       // sendForm envoie les champs nommés du formulaire, y compris la pièce jointe "attachment"
       await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, { publicKey: PUBLIC_KEY })
       setStatus('sent')
@@ -168,19 +176,19 @@ export default function QuoteForm() {
             <>
               <div className="grid gap-5 md:grid-cols-2">
                 <Field label={t('form.name')} error={errors.name}>
-                  <input name="from_name" className={field} value={form.name} onChange={set('name')} autoComplete="name" />
+                  <input name="name" className={field} value={form.name} onChange={set('name')} autoComplete="name" />
                 </Field>
                 <Field label={t('form.phone')} error={errors.phone}>
                   <input name="phone" className={field} value={form.phone} onChange={set('phone')} type="tel" dir="ltr" autoComplete="tel" placeholder="06 00 00 00 00" />
                 </Field>
                 <Field label={t('form.email')} error={errors.email}>
-                  <input name="reply_to" className={field} value={form.email} onChange={set('email')} type="email" dir="ltr" autoComplete="email" />
+                  <input name="email" className={field} value={form.email} onChange={set('email')} type="email" dir="ltr" autoComplete="email" />
                 </Field>
                 <Field label={t('form.city')} error={errors.city}>
                   <input name="city" className={field} value={form.city} onChange={set('city')} placeholder={t('form.cityPlaceholder')} />
                 </Field>
                 <Field label={t('form.type')} error={errors.type}>
-                  <select name="project_type" className={field} value={form.type} onChange={set('type')}>
+                  <select name="title" className={field} value={form.type} onChange={set('type')}>
                     <option value="">{t('form.select')}</option>
                     {projectTypes.map((type, i) => (
                       <option key={type} value={type}>
@@ -234,6 +242,9 @@ export default function QuoteForm() {
                 aria-hidden="true"
                 className="absolute -left-[9999px] h-0 w-0 opacity-0"
               />
+
+              {/* Date d'envoi (remplie au moment de l'envoi, variable {{time}} du template) */}
+              <input type="hidden" name="time" defaultValue="" />
 
               <div className="mt-6">
                 <label className="flex items-start gap-3 text-sm leading-relaxed text-charcoal/80">

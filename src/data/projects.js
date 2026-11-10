@@ -7,6 +7,7 @@ export const categories = [
   'Menuiserie',
   'Faux plafond',
   'Aménagement',
+  'Plans',
 ]
 
 const n = (prefix, count) => Array.from({ length: count }, (_, i) => `/projects/${prefix}-${i + 1}.jpg`)
@@ -22,10 +23,23 @@ export const projects = [
     description:
       "Aménagement complet d'un cabinet : cloisons, faux plafonds, menuiserie sur mesure, mobilier et rangements fabriqués dans nos ateliers, jusqu'aux finitions soignées.",
     gallery: [...n('cabinet', 7), ...n('cabinet-medical', 7)],
-    videos: [
-      { src: '/videos/cabinet-meuble.mp4', poster: '/videos/cabinet-meuble.jpg' },
-      { src: '/videos/cabinet-avant.mp4', poster: '/videos/cabinet-avant.jpg' },
+    videos: [],
+  },
+
+  {
+    id: 'salle-conference',
+    title: 'Aménagement de salle de conférence',
+    category: 'Aménagement',
+    service: 'Aménagement des espaces plateaux',
+    city: 'Rabat', // à corriger si la ville est différente
+    year: 2025,
+    description: "Aménagement d'une salle de conférence : cloisons, menuiserie sur mesure et finitions soignées.",
+    // La première image sert de couverture. Les captures sont tirées de la vidéo.
+    gallery: [
+      '/videos/cabinet-meuble.jpg',
+      '/videos/cabinet-meuble-porte-entree.jpg',
     ],
+    videos: [{ src: '/videos/cabinet-meuble.mp4', poster: '/videos/cabinet-meuble.jpg' }],
   },
   {
     id: 'cuisine',
@@ -81,6 +95,17 @@ export const projects = [
     description:
       "Transformation d'un salon : faux plafond avec éclairage LED, finitions murales et sol. Les photos « après » sont suivies des photos « avant ».",
     gallery: n('salon', 7),
+    videos: [],
+  },
+  {
+    id: 'dessins-plans',
+    title: 'Dessins et plans',
+    category: 'Plans',
+    service: 'Conception et plans 3D',
+    city: 'Kénitra',
+    year: 2026,
+    description: 'Plans et dessins 3D réalisés avant le chantier pour visualiser le projet : construction, cuisine, agencement.',
+    gallery: n('plans', 2),
     videos: [],
   },
 ]

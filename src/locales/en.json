@@ -50,6 +50,7 @@
     "Menuiserie": "Joinery",
     "Faux plafond": "False ceilings",
     "Aménagement": "Fit-out",
+    "Plans": "Plans",
     "Rénovation": "Renovation",
     "Construction": "Construction"
   },
@@ -648,6 +649,11 @@
         "title": "Living room fit-out",
         "service": "Interior fit-out",
         "description": "Transformation of a living room: false ceiling with LED lighting, wall and floor finishes. The “after” photos are followed by the “before” photos."
+      },
+      "dessins-plans": {
+        "title": "Drawings and plans",
+        "service": "Design and 3D plans",
+        "description": "Plans and 3D drawings produced before the works to visualise the project: construction, kitchen, layout."
       }
     },
     "otherVideos": {

@@ -50,6 +50,7 @@
     "Menuiserie": "Menuiserie",
     "Faux plafond": "Faux plafond",
     "Aménagement": "Aménagement",
+    "Plans": "Plans",
     "Rénovation": "Rénovation",
     "Construction": "Construction"
   },
@@ -648,6 +649,11 @@
         "title": "Aménagement de salon",
         "service": "Aménagement intérieur",
         "description": "Transformation d'un salon : faux plafond avec éclairage LED, finitions murales et sol. Les photos « après » sont suivies des photos « avant »."
+      },
+      "dessins-plans": {
+        "title": "Dessins et plans",
+        "service": "Conception et plans 3D",
+        "description": "Plans et dessins 3D réalisés avant le chantier pour visualiser le projet : construction, cuisine, agencement."
       }
     },
     "otherVideos": {
