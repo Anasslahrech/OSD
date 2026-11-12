@@ -32,13 +32,13 @@ export const site = {
 // Informations légales affichées dans « Mentions légales » (laisser vide tant qu'elles ne sont pas fournies).
 export const legal = {
   companyName: 'Overall Style Designer (OSD)',
-  legalForm: '', // ex. SARL, SARL AU, auto-entrepreneur
-  capital: '',
-  ice: '',
-  rc: '',
-  if: '',
-  address: '',
-  publicationDirector: '',
+  legalForm: 'SARL',
+  capital: '100 000 MAD',
+  ice: '004021988000055',
+  rc: '', // à fournir
+  if: '', // à fournir
+  address: 'Im 2160 G2 Lotissement Haddada – Kénitra',
+  publicationDirector: 'Driss Haddoudi',
   host: 'Google Firebase Hosting (Google LLC)',
 }
 
